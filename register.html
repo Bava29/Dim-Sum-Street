@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dim Sum Street</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Noto+Serif+SC:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-top-actions">
+        <button type="button" class="auth-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button type="button" class="auth-toggle" id="rtlToggle" aria-label="Toggle RTL direction">
+            <i class="fa-solid fa-right-left"></i>
+        </button>
+    </div>
+
+    <main class="auth-main">
+
+        <section class="auth-card auth-register-card">
+
+            <a href="index.html" class="auth-logo">
+                <img src="images/logo.png" alt="Dim Sum Street">
+            </a>
+
+            <div class="auth-heading">
+                <span class="auth-eyebrow">JOIN OUR TABLE</span>
+                <h1>Create Your <span>Account.</span></h1>
+                <p>Join Dim Sum Street for a more personal dining experience.</p>
+            </div>
+
+            <form class="auth-form" id="registerForm">
+
+                <div class="auth-field">
+                    <label for="registerName">Full Name</label>
+                    <div class="auth-input-wrap">
+                        <i class="fa-regular fa-user auth-field-icon"></i>
+                        <input type="text" id="registerName" name="name" placeholder="Enter your full name"
+                            autocomplete="name" required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="registerEmail">Email Address</label>
+                    <div class="auth-input-wrap">
+                        <i class="fa-regular fa-envelope auth-field-icon"></i>
+                        <input type="email" id="registerEmail" name="email" placeholder="Enter your email address"
+                            autocomplete="email" required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="registerPhone">Phone Number</label>
+                    <div class="auth-input-wrap">
+                        <i class="fa-solid fa-phone auth-field-icon"></i>
+                        <input type="tel" id="registerPhone" name="phone" placeholder="Enter your phone number"
+                            autocomplete="tel" required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="registerPassword">Create Password</label>
+                    <div class="auth-input-wrap">
+                        <i class="fa-solid fa-lock auth-field-icon"></i>
+                        <input type="password" id="registerPassword" name="password" placeholder="Create a password"
+                            autocomplete="new-password" minlength="8" required>
+
+                        <button type="button" class="auth-eye" data-password="registerPassword"
+                            aria-label="Show password">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <div class="auth-input-wrap">
+                        <i class="fa-solid fa-lock auth-field-icon"></i>
+                        <input type="password" id="confirmPassword" name="confirmPassword"
+                            placeholder="Enter your password again" autocomplete="new-password" minlength="8" required>
+
+                        <button type="button" class="auth-eye" data-password="confirmPassword"
+                            aria-label="Show password">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <label class="auth-remember auth-terms">
+                    <input type="checkbox" id="acceptTerms" required>
+                    <span>I agree to the <a href="#">Terms &amp; Conditions</a>.</span>
+                </label>
+
+                <button type="submit" class="auth-submit">
+                    Create Account
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+            <div class="auth-divider">
+                <span></span>
+                <p>OR CONTINUE WITH</p>
+                <span></span>
+            </div>
+
+            <div class="auth-socials">
+
+                <button type="button" class="auth-social-button" id="googleRegister">
+                    <img src="images/google-logo.svg" alt="" class="auth-google-icon">
+                    <span>Google</span>
+                </button>
+
+                <button type="button" class="auth-social-button" id="facebookRegister">
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </button>
+
+                <!-- Apple -->
+                <button type="button" class="auth-social-button" id="appleLogin">
+                    <i class="fa-brands fa-apple auth-apple-icon" aria-hidden="true"></i>
+                    <span>Apple</span>
+                </button>
+
+            </div>
+
+            <p class="auth-switch">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

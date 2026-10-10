@@ -1,0 +1,1454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dim Sum Street</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Noto+Serif+SC:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+     HEADER
+========================= -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="Dim Sum Street">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+
+                    <!-- Home Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span class="nav-text">About</span></a>
+                    </li>
+
+                    <!-- Menu Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">Steamed Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="fried-dim-sum.html">Fried Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="signature-baskets.html">Signature Baskets</a>
+                            </li>
+                            <li>
+                                <a href="desserts.html">Desserts</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="nav-item">
+                        <a href="weekend-brunch.html" class="nav-link">
+                            <span class="nav-text">Weekend Brunch</span>
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="nav-item">
+                        <a href="locations.html" class="nav-link">
+                            <span class="nav-text">Locations</span>
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Desktop Header Actions -->
+            <div class="header-actions">
+
+                <!-- Dark Mode -->
+                <button class="header-toggle theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button class="header-toggle rtl-toggle" id="rtlToggle" type="button" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </button>
+
+                <!-- Login -->
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve Table -->
+                <a href="booking.html" class="reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+
+                    <!-- Home -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="mobile-nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <!-- Menu -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">
+                                    Steamed Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fried-dim-sum.html">
+                                    Fried Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="signature-baskets.html">
+                                    Signature Baskets
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="desserts.html">
+                                    Desserts
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="mobile-nav-item">
+                        <a href="weekend-brunch.html">
+                            Weekend Brunch
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="mobile-nav-item">
+                        <a href="locations.html">
+                            Locations
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="mobile-nav-item">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Mobile Actions -->
+            <div class="mobile-actions">
+
+                <div class="mobile-action-row">
+
+                    <!-- Dark Mode -->
+                    <button class="mobile-action-btn" id="mobileThemeToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-moon"></i>
+                            Dark Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- RTL -->
+                    <button class="mobile-action-btn" id="mobileRtlToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            RTL Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Login -->
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve -->
+                <a href="booking.html" class="mobile-reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- =========================
+     HOME 2 - HERO SECTION
+========================= -->
+    <section class="luxury-dimsum-hero">
+
+        <div class="luxury-hero-background"></div>
+
+        <div class="luxury-hero-panels">
+
+            <div class="luxury-hero-panel luxury-panel-left">
+                <img src="images/home2-hero-left.jpg" alt="Steamed dim sum baskets">
+            </div>
+
+            <div class="luxury-hero-panel luxury-panel-center">
+                <img src="images/home2-hero-center.jpg" alt="Signature dim sum">
+            </div>
+
+            <div class="luxury-hero-panel luxury-panel-right">
+                <img src="images/home2-hero-right.jpg" alt="Traditional Chinese tea and dim sum">
+            </div>
+
+        </div>
+
+        <div class="luxury-hero-overlay"></div>
+
+        <div class="luxury-hero-content">
+
+            <div class="luxury-hero-topline">
+                <span></span>
+                <i class="fa-solid fa-bowl-food"></i>
+                <span></span>
+            </div>
+
+            <span class="luxury-hero-label">
+                THE ART OF DIM SUM
+            </span>
+
+            <h1>
+                A Taste Of
+                <span>Tradition.</span>
+            </h1>
+
+            <p>
+                Handcrafted baskets, time-honoured recipes and refined
+                Chinese flavours, thoughtfully prepared for unforgettable
+                moments around the table.
+            </p>
+
+            <div class="luxury-hero-actions">
+
+                <a href="booking.html" class="luxury-hero-primary">
+                    Reserve a Table
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="steamed-dim-sum.html" class="luxury-hero-secondary">
+                    Discover the Menu
+                </a>
+
+            </div>
+
+            <div class="luxury-hero-bottom">
+
+                <div class="luxury-hero-location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>CHINATOWN · OPEN DAILY</span>
+                </div>
+
+                <div class="luxury-hero-scroll">
+                    <span>SCROLL TO EXPLORE</span>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="luxury-hero-corner luxury-corner-top">
+            <span>EST.</span>
+            <strong>2026</strong>
+        </div>
+
+        <div class="luxury-hero-corner luxury-corner-bottom">
+            <span>DIM SUM</span>
+            <strong>STREET</strong>
+        </div>
+
+    </section>
+
+    <!-- =========================
+     HOME 2 - SECTION 2
+     THE SIGNATURE RITUAL
+========================= -->
+    <section class="signature-ritual-section">
+
+        <div class="signature-ritual-container">
+
+            <div class="signature-ritual-heading">
+
+                <span class="signature-ritual-label">
+                    <i class="fa-solid fa-leaf"></i>
+                    THE SIGNATURE RITUAL
+                </span>
+
+                <h2>
+                    More Than A Meal.
+                    <span>A Ritual Worth Sharing.</span>
+                </h2>
+
+                <p>
+                    At Dim Sum Street, every table begins with tea, conversation
+                    and the anticipation of the first basket. Slow down, pour a
+                    cup and savour the tradition.
+                </p>
+
+            </div>
+
+            <div class="signature-ritual-steps">
+
+                <!-- Step 01 -->
+                <article class="signature-ritual-step">
+
+                    <div class="signature-ritual-number">
+                        01
+                    </div>
+
+                    <div class="signature-ritual-image">
+                        <img src="images/ritual-tea.jpg" alt="Traditional Chinese tea">
+                    </div>
+
+                    <div class="signature-ritual-content">
+                        <span>BEGIN WITH TEA</span>
+
+                        <h3>
+                            Pour The First Cup
+                        </h3>
+
+                        <p>
+                            Fragrant traditional tea sets the mood before
+                            the first bamboo basket reaches your table.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- Step 02 -->
+                <article class="signature-ritual-step">
+
+                    <div class="signature-ritual-number">
+                        02
+                    </div>
+
+                    <div class="signature-ritual-image">
+                        <img src="images/ritual-basket.jpg" alt="Fresh dim sum basket">
+                    </div>
+
+                    <div class="signature-ritual-content">
+                        <span>OPEN THE BASKET</span>
+
+                        <h3>
+                            Discover Flavours
+                        </h3>
+
+                        <p>
+                            Lift the lid and let freshly steamed aromas
+                            introduce you to every delicate bite.
+                        </p>
+                    </div>
+
+                </article>
+
+                <!-- Step 03 -->
+                <article class="signature-ritual-step">
+
+                    <div class="signature-ritual-number">
+                        03
+                    </div>
+
+                    <div class="signature-ritual-image">
+                        <img src="images/ritual-sharing.jpg" alt="Friends sharing dim sum">
+                    </div>
+
+                    <div class="signature-ritual-content">
+                        <span>SHARE THE TABLE</span>
+
+                        <h3>
+                            Pass, Taste & Enjoy
+                        </h3>
+
+                        <p>
+                            Dim sum was made for sharing. Reach across the
+                            table, try something new and stay a little longer.
+                        </p>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <div class="signature-ritual-footer">
+                <span></span>
+                <i class="fa-solid fa-bowl-food"></i>
+                <strong>Tradition served one basket at a time.</strong>
+                <i class="fa-solid fa-bowl-food"></i>
+                <span></span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     HOME 2 - SECTION 3
+     THE STREET SELECTION
+========================= -->
+    <section class="street-selection-section">
+
+        <div class="street-selection-container">
+
+            <!-- TOP HEADING -->
+            <div class="street-selection-heading">
+
+                <div class="street-selection-heading-left">
+                    <span class="street-selection-label">
+                        <i class="fa-solid fa-chopsticks"></i>
+                        THE STREET SELECTION
+                    </span>
+
+                    <h2>
+                        Curated For
+                        <span>Every Craving.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    A considered collection of flavours inspired by bustling
+                    Chinese streets, timeless recipes and the joy of discovering
+                    something new at the table.
+                </p>
+
+            </div>
+
+
+            <!-- MAIN SHOWCASE -->
+            <div class="street-selection-showcase">
+
+                <!-- LEFT PANEL -->
+                <div class="street-selection-side street-selection-left">
+
+                    <span class="street-selection-number">01</span>
+
+                    <div class="street-selection-side-icon">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+
+                    <span class="street-selection-category">
+                        STEAMED
+                    </span>
+
+                    <h3>
+                        Delicate
+                        <span>Clouds</span>
+                    </h3>
+
+                    <p>
+                        Silky wrappers, fragrant fillings and delicate
+                        baskets lifted straight from the steamer.
+                    </p>
+
+                    <a href="steamed-dim-sum.html">
+                        Explore Steamed
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+
+                <!-- CENTER IMAGE -->
+                <div class="street-selection-center">
+
+                    <div class="street-selection-image-frame">
+
+                        <img src="images/home2-selection.jpg" alt="Premium dim sum selection">
+
+                        <div class="street-selection-image-overlay"></div>
+
+                        <div class="street-selection-center-text">
+                            <span>DIM SUM</span>
+                            <strong>STREET</strong>
+                            <small>EST. 2026</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT PANEL -->
+                <div class="street-selection-side street-selection-right">
+
+                    <span class="street-selection-number">02</span>
+
+                    <div class="street-selection-side-icon">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+
+                    <span class="street-selection-category">
+                        FRIED
+                    </span>
+
+                    <h3>
+                        Golden
+                        <span>Favourites</span>
+                    </h3>
+
+                    <p>
+                        Crisp, golden bites with irresistible textures,
+                        rich fillings and plenty of character.
+                    </p>
+
+                    <a href="fried-dim-sum.html">
+                        Explore Fried
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM NOTE -->
+            <div class="street-selection-bottom">
+
+                <span></span>
+
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <strong>Made For Sharing</strong>
+                    <small>— One table, countless flavours.</small>
+                </div>
+
+                <span></span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     HOME 2 - SECTION 4
+     FOUR MOMENTS, ONE TABLE
+========================= -->
+    <section class="table-moments-section">
+
+        <div class="table-moments-container">
+
+            <div class="table-moments-intro">
+
+                <span class="table-moments-label">
+                    <i class="fa-solid fa-clock"></i>
+                    THE DIM SUM MOMENT
+                </span>
+
+                <h2>
+                    From The First Pour
+                    <span>To The Last Bite.</span>
+                </h2>
+
+                <p>
+                    A memorable visit is never just about what's on the plate.
+                    It's the little moments between each basket that make the
+                    experience worth returning to.
+                </p>
+
+            </div>
+
+
+            <div class="table-moments-line">
+
+                <!-- MOMENT 01 -->
+                <article class="table-moment">
+
+                    <div class="table-moment-marker">
+                        <span>01</span>
+                    </div>
+
+                    <div class="table-moment-content">
+                        <span class="table-moment-time">
+                            THE ARRIVAL
+                        </span>
+
+                        <h3>
+                            Welcome To The Street
+                        </h3>
+
+                        <p>
+                            Step away from the rush outside and into a table
+                            filled with warmth, fragrance and the promise
+                            of something delicious.
+                        </p>
+                    </div>
+
+                    <div class="table-moment-detail">
+                        <i class="fa-solid fa-door-open"></i>
+                        <span>10:00 AM</span>
+                    </div>
+
+                </article>
+
+
+                <!-- MOMENT 02 -->
+                <article class="table-moment">
+
+                    <div class="table-moment-marker">
+                        <span>02</span>
+                    </div>
+
+                    <div class="table-moment-content">
+                        <span class="table-moment-time">
+                            THE FIRST POUR
+                        </span>
+
+                        <h3>
+                            Tea Sets The Mood
+                        </h3>
+
+                        <p>
+                            A warm pot of traditional tea arrives first,
+                            inviting everyone to slow down and settle into
+                            the conversation.
+                        </p>
+                    </div>
+
+                    <div class="table-moment-detail">
+                        <i class="fa-solid fa-mug-hot"></i>
+                        <span>TEA TIME</span>
+                    </div>
+
+                </article>
+
+
+                <!-- MOMENT 03 -->
+                <article class="table-moment">
+
+                    <div class="table-moment-marker">
+                        <span>03</span>
+                    </div>
+
+                    <div class="table-moment-content">
+                        <span class="table-moment-time">
+                            THE TABLE FILLS
+                        </span>
+
+                        <h3>
+                            Basket After Basket
+                        </h3>
+
+                        <p>
+                            Steam rises, lids lift and the table slowly
+                            fills with colours, textures and flavours made
+                            for sharing.
+                        </p>
+                    </div>
+
+                    <div class="table-moment-detail">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span>SHARE & TASTE</span>
+                    </div>
+
+                </article>
+
+
+                <!-- MOMENT 04 -->
+                <article class="table-moment">
+
+                    <div class="table-moment-marker">
+                        <span>04</span>
+                    </div>
+
+                    <div class="table-moment-content">
+                        <span class="table-moment-time">
+                            THE LAST BITE
+                        </span>
+
+                        <h3>
+                            Stay A Little Longer
+                        </h3>
+
+                        <p>
+                            The baskets may be empty, but the stories,
+                            laughter and memories made around the table
+                            are just beginning.
+                        </p>
+                    </div>
+
+                    <div class="table-moment-detail">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>COME BACK SOON</span>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="table-moments-footer">
+
+                <div class="table-moments-footer-line"></div>
+
+                <span>
+                    <i class="fa-solid fa-champagne-glasses"></i>
+                    GOOD FOOD · GOOD COMPANY · GOOD MEMORIES
+                </span>
+
+                <div class="table-moments-footer-line"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     HOME 2 - SECTION 5
+     THE TEA HOUSE
+========================= -->
+    <section class="tea-house-section">
+
+        <div class="tea-house-container">
+
+            <!-- LEFT DECORATIVE SIDE -->
+            <div class="tea-house-side-mark">
+
+                <span>TRADITION</span>
+
+                <div class="tea-house-vertical-line"></div>
+
+                <i class="fa-solid fa-leaf"></i>
+
+                <span>HOSPITALITY</span>
+
+            </div>
+
+
+            <!-- MAIN CONTENT -->
+            <div class="tea-house-main">
+
+                <div class="tea-house-heading">
+
+                    <span class="tea-house-label">
+                        <i class="fa-solid fa-mug-hot"></i>
+                        THE TEA HOUSE
+                    </span>
+
+                    <h2>
+                        Every Basket
+                        <span>Deserves Good Tea.</span>
+                    </h2>
+
+                    <p>
+                        From fragrant jasmine to comforting oolong, our tea
+                        selection is chosen to complement the flavours of
+                        every dim sum moment.
+                    </p>
+
+                </div>
+
+
+                <!-- TEA COLLECTION -->
+                <div class="tea-house-collection">
+
+                    <div class="tea-house-feature">
+
+                        <div class="tea-house-feature-number">
+                            01
+                        </div>
+
+                        <div class="tea-house-feature-content">
+
+                            <span>OUR HOUSE POUR</span>
+
+                            <h3>
+                                Jasmine Tea
+                            </h3>
+
+                            <p>
+                                Light, floral and beautifully fragrant.
+                                A timeless companion to delicate steamed
+                                baskets.
+                            </p>
+
+                        </div>
+
+                        <div class="tea-house-feature-icon">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="tea-house-list">
+
+                        <div class="tea-house-item">
+
+                            <span>02</span>
+
+                            <div>
+                                <h4>Oolong</h4>
+                                <p>Toasty · Smooth · Aromatic</p>
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </div>
+
+
+                        <div class="tea-house-item">
+
+                            <span>03</span>
+
+                            <div>
+                                <h4>Pu-erh</h4>
+                                <p>Deep · Earthy · Refined</p>
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </div>
+
+
+                        <div class="tea-house-item">
+
+                            <span>04</span>
+
+                            <div>
+                                <h4>Chrysanthemum</h4>
+                                <p>Floral · Gentle · Refreshing</p>
+                            </div>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <a href="#" class="tea-house-link">
+                    Explore Our Tea Selection
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <!-- RIGHT DECORATIVE CIRCLE -->
+            <div class="tea-house-decoration">
+
+                <div class="tea-house-circle tea-circle-one"></div>
+                <div class="tea-house-circle tea-circle-two"></div>
+
+                <i class="fa-solid fa-mug-hot"></i>
+
+                <span>茶</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     HOME 2 - SECTION 6
+     PHILOSOPHY OF SHARING
+========================= -->
+    <section class="sharing-philosophy-section">
+
+        <div class="sharing-philosophy-container">
+
+            <!-- TOP DECORATION -->
+            <div class="sharing-philosophy-top">
+
+                <span></span>
+
+                <i class="fa-solid fa-bowl-food"></i>
+
+                <span></span>
+
+            </div>
+
+
+            <!-- MAIN QUOTE -->
+            <div class="sharing-philosophy-main">
+
+                <span class="sharing-philosophy-label">
+                    OUR PHILOSOPHY
+                </span>
+
+                <div class="sharing-philosophy-quote-mark">
+                    “
+                </div>
+
+                <blockquote>
+                    The best meals are not measured
+                    by what is on the plate,
+                    but by <span>who sits around it.</span>
+                </blockquote>
+
+                <p>
+                    Dim sum has always been about bringing people closer.
+                    Small baskets become shared discoveries, simple moments
+                    become stories, and every table becomes a place to connect.
+                </p>
+
+                <div class="sharing-philosophy-signature">
+                    <span></span>
+                    <strong>DIM SUM STREET</strong>
+                    <span></span>
+                </div>
+
+            </div>
+
+
+            <!-- BOTTOM VALUES -->
+            <div class="sharing-philosophy-values">
+
+                <div class="sharing-value">
+                    <span>01</span>
+                    <div>
+                        <i class="fa-solid fa-people-group"></i>
+                        <strong>SHARE</strong>
+                        <small>Everything tastes better together.</small>
+                    </div>
+                </div>
+
+                <div class="sharing-value">
+                    <span>02</span>
+                    <div>
+                        <i class="fa-solid fa-heart"></i>
+                        <strong>SAVOUR</strong>
+                        <small>Take your time with every bite.</small>
+                    </div>
+                </div>
+
+                <div class="sharing-value">
+                    <span>03</span>
+                    <div>
+                        <i class="fa-solid fa-face-smile"></i>
+                        <strong>CELEBRATE</strong>
+                        <small>Make ordinary meals memorable.</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     HOME 2 - SECTION 7
+     FIND YOUR STREET
+========================= -->
+    <section class="find-street-section">
+
+        <div class="find-street-overlay"></div>
+
+        <div class="find-street-container">
+
+            <div class="find-street-content">
+
+                <span class="find-street-label">
+                    <i class="fa-solid fa-location-dot"></i>
+                    FIND YOUR STREET
+                </span>
+
+                <h2>
+                    Come For The
+                    <span>Dim Sum.</span>
+                </h2>
+
+                <p>
+                    Step into a warm corner of the city where traditional
+                    flavours, handcrafted baskets and good company meet.
+                    Your table is waiting.
+                </p>
+
+                <div class="find-street-details">
+
+                    <div class="find-street-detail">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+                            <span>OUR FLAGSHIP</span>
+                            <strong>18 Lantern Street, Chinatown</strong>
+                        </div>
+                    </div>
+
+                    <div class="find-street-detail">
+                        <i class="fa-regular fa-clock"></i>
+
+                        <div>
+                            <span>OPEN DAILY</span>
+                            <strong>10:00 AM — 10:00 PM</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="find-street-actions">
+
+                    <a href="locations.html" class="find-street-primary">
+                        Explore Locations
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="booking.html" class="find-street-secondary">
+                        Reserve A Table
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="find-street-side">
+
+                <div class="find-street-side-line"></div>
+
+                <span>DIM SUM</span>
+                <strong>STREET</strong>
+
+                <small>
+                    EST. 2026
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     HOME 2 - SECTION 8
+     MAKE IT A GATHERING
+========================= -->
+    <section class="gathering-section">
+
+        <div class="gathering-container">
+
+            <!-- LEFT DECORATIVE PANEL -->
+            <div class="gathering-panel">
+
+                <span class="gathering-panel-small">
+                    COME TOGETHER
+                </span>
+
+                <div class="gathering-panel-symbol">
+                    <span>茶</span>
+                </div>
+
+                <span class="gathering-panel-text">
+                    GOOD FOOD
+                </span>
+
+                <span class="gathering-panel-text">
+                    GOOD COMPANY
+                </span>
+
+                <span class="gathering-panel-text">
+                    GOOD MEMORIES
+                </span>
+
+            </div>
+
+
+            <!-- MAIN CONTENT -->
+            <div class="gathering-content">
+
+                <span class="gathering-label">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    MAKE IT A GATHERING
+                </span>
+
+                <h2>
+                    Some Moments
+                    <span>Deserve A Table.</span>
+                </h2>
+
+                <p>
+                    Whether it is a family celebration, a weekend catch-up
+                    or simply an excuse to order one more basket, make your
+                    next gathering one worth remembering.
+                </p>
+
+
+                <div class="gathering-options">
+
+                    <div class="gathering-option">
+
+                        <div class="gathering-option-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+
+                        <div>
+                            <span>FAMILY & FRIENDS</span>
+                            <strong>Gather Around</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gathering-option">
+
+                        <div class="gathering-option-icon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </div>
+
+                        <div>
+                            <span>SPECIAL MOMENTS</span>
+                            <strong>Celebrate Together</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="gathering-option">
+
+                        <div class="gathering-option-icon">
+                            <i class="fa-solid fa-bag-shopping"></i>
+                        </div>
+
+                        <div>
+                            <span>GROUP ORDERS</span>
+                            <strong>Bring The Street Home</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="gathering-actions">
+
+                    <a href="booking.html" class="gathering-primary">
+                        Reserve Your Table
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact.html" class="gathering-secondary">
+                        Enquire With Us
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT IMAGE -->
+            <div class="gathering-visual">
+
+                <div class="gathering-image">
+                    <img src="images/home2-gathering.jpg" alt="Friends sharing dim sum at a table">
+                </div>
+
+                <div class="gathering-image-frame"></div>
+
+                <div class="gathering-stamp">
+                    <span>SHARE</span>
+                    <strong>MORE</strong>
+                    <small>TOGETHER</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     FOOTER
+========================= -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+            <div class="footer-container">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="Dim Sum Street">
+                    </a>
+
+                    <p class="footer-description">
+                        Traditional dim sum, handcrafted baskets, and
+                        warm dining moments made to bring everyone together.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="weekend-brunch.html">
+                                Weekend Brunch
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="locations.html">Locations</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Our Menu -->
+                <div class="footer-column">
+
+                    <h3>Our Menu</h3>
+
+                    <ul>
+                        <li>
+                            <a href="steamed-dim-sum.html">
+                                Steamed Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="fried-dim-sum.html">
+                                Fried Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="signature-baskets.html">
+                                Signature Baskets
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="desserts.html">
+                                Desserts
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h3>Visit Us</h3>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <p>
+                            24 Bamboo Street,<br>
+                            Chinatown, Chennai
+                        </p>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <a href="mailto:hello@dimsumstreet.com">
+                            hello@dimsumstreet.com
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <p>
+                            Mon – Sun: 10:30 AM – 10:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-container">
+
+                <p>
+                    © 2026 Dim Sum Street. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <span>|</span>
+
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

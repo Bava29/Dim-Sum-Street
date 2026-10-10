@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dim Sum Street</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Noto+Serif+SC:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+     HEADER
+========================= -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="Dim Sum Street">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+
+                    <!-- Home Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span class="nav-text">About</span></a>
+                    </li>
+
+                    <!-- Menu Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">Steamed Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="fried-dim-sum.html">Fried Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="signature-baskets.html">Signature Baskets</a>
+                            </li>
+                            <li>
+                                <a href="desserts.html">Desserts</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="nav-item">
+                        <a href="weekend-brunch.html" class="nav-link">
+                            <span class="nav-text">Weekend Brunch</span>
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="nav-item">
+                        <a href="locations.html" class="nav-link">
+                            <span class="nav-text">Locations</span>
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Desktop Header Actions -->
+            <div class="header-actions">
+
+                <!-- Dark Mode -->
+                <button class="header-toggle theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button class="header-toggle rtl-toggle" id="rtlToggle" type="button" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </button>
+
+                <!-- Login -->
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve Table -->
+                <a href="booking.html" class="reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+
+                    <!-- Home -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="mobile-nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <!-- Menu -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">
+                                    Steamed Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fried-dim-sum.html">
+                                    Fried Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="signature-baskets.html">
+                                    Signature Baskets
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="desserts.html">
+                                    Desserts
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="mobile-nav-item">
+                        <a href="weekend-brunch.html">
+                            Weekend Brunch
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="mobile-nav-item">
+                        <a href="locations.html">
+                            Locations
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="mobile-nav-item">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Mobile Actions -->
+            <div class="mobile-actions">
+
+                <div class="mobile-action-row">
+
+                    <!-- Dark Mode -->
+                    <button class="mobile-action-btn" id="mobileThemeToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-moon"></i>
+                            Dark Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- RTL -->
+                    <button class="mobile-action-btn" id="mobileRtlToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            RTL Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Login -->
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve -->
+                <a href="booking.html" class="mobile-reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="page-hero about-page-hero" style="background-image: url('images/s-hero.jpg');">
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="page-hero-container">
+
+            <div class="page-hero-content">
+
+                <span class="page-hero-label">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    FRESH FROM THE STEAMER
+                </span>
+
+                <h1>
+                    Delicate Bites.
+                    <span>Timeless Tradition.</span>
+                </h1>
+
+                <p>
+                    Discover the delicate art of traditional dim sum, where tender dumplings, fresh ingredients and
+                    authentic flavours come together in every bamboo basket.
+                </p>
+
+                <div class="page-hero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Steamed Dim Sum</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION 2: STEAMED DIM SUM COLLECTION -->
+    <section class="dim-collection-section" id="steamed-collection">
+        <div class="dim-collection-container">
+
+            <div class="dim-collection-heading">
+                <span class="dim-collection-eyebrow">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    FRESH FROM THE STEAMER
+                </span>
+
+                <h2>The Art of <span>Steaming.</span></h2>
+
+                <p>
+                    Delicate wrappers, flavourful fillings and the comforting
+                    aroma of freshly steamed dim sum. Discover timeless
+                    favourites made for sharing.
+                </p>
+            </div>
+
+            <div class="dim-collection-grid">
+
+                <article class="dim-collection-card">
+                    <div class="dim-collection-image">
+                        <img src="images/steamed-har-gow.jpg" alt="Traditional steamed shrimp har gow dumplings">
+                        <span class="dim-collection-tag">HOUSE FAVOURITE</span>
+                    </div>
+                    <div class="dim-collection-content">
+                        <span class="dim-collection-category">SHRIMP DIM SUM</span>
+                        <h3>Crystal Har Gow</h3>
+                        <p>
+                            Delicate translucent wrappers filled with juicy
+                            shrimp for a light and flavourful bite.
+                        </p>
+                        <a href="steamed-dim-sum.html" class="dim-collection-link">
+                            Explore Menu
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="dim-collection-card">
+                    <div class="dim-collection-image">
+                        <img src="images/steamed-siu-mai.jpg" alt="Freshly steamed siu mai dumplings">
+                        <span class="dim-collection-tag">CLASSIC PICK</span>
+                    </div>
+                    <div class="dim-collection-content">
+                        <span class="dim-collection-category">OPEN-TOP DUMPLINGS</span>
+                        <h3>Classic Siu Mai</h3>
+                        <p>
+                            Traditional open-top dumplings with a savoury
+                            filling, prepared fresh in batch.
+                        </p>
+                        <a href="steamed-dim-sum.html" class="dim-collection-link">
+                            Explore Menu
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="dim-collection-card">
+                    <div class="dim-collection-image">
+                        <img src="images/steamed-bao.jpg" alt="Soft steamed Chinese bao buns">
+                        <span class="dim-collection-tag">SOFT & FLUFFY</span>
+                    </div>
+                    <div class="dim-collection-content">
+                        <span class="dim-collection-category">BAO BUNS</span>
+                        <h3>Steamed Bao Buns</h3>
+                        <p>
+                            Pillowy soft bao buns with a delicious filling,
+                            bringing comfort to every bite.
+                        </p>
+                        <a href="steamed-dim-sum.html" class="dim-collection-link">
+                            Explore Menu
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="dim-collection-card">
+                    <div class="dim-collection-image">
+                        <img src="images/steamed-vegetable-dumplings.jpg" alt="Steamed vegetable dumplings">
+                        <span class="dim-collection-tag">VEGETARIAN PICK</span>
+                    </div>
+                    <div class="dim-collection-content">
+                        <span class="dim-collection-category">VEGETARIAN</span>
+                        <h3>Garden Dumplings</h3>
+                        <p>
+                            A colourful vegetable filling wrapped in tender
+                            dough and steamed to perfection.
+                        </p>
+                        <a href="steamed-dim-sum.html" class="dim-collection-link">
+                            Explore Menu
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="dim-collection-bottom">
+                <p>
+                    <i class="fa-solid fa-leaf"></i>
+                    Gently steamed. Thoughtfully prepared. Made to share.
+                </p>
+
+                <a href="steamed-dim-sum.html" class="dim-collection-button">
+                    View Full Menu
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: STEAMED SIGNATURE FAVOURITES -->
+    <section class="dim-signature-section" id="steamed-signatures">
+        <div class="dim-signature-container">
+
+            <div class="dim-signature-heading">
+                <span class="dim-signature-eyebrow">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    STEAMED WITH CARE
+                </span>
+
+                <h2>Little Baskets, <span>Big Flavours.</span></h2>
+
+                <p>
+                    Discover the steamed favourites that bring delicate
+                    textures, comforting flavours and authentic dim sum
+                    traditions to your table.
+                </p>
+            </div>
+
+            <div class="dim-signature-layout">
+
+                <div class="dim-signature-featured-image">
+                    <img src="images/steamed-signature-basket.jpg"
+                        alt="Assorted steamed dim sum in traditional bamboo baskets">
+
+                    <div class="dim-signature-image-overlay">
+                        <span>MADE FRESH TO ORDER</span>
+                        <h3>Tradition in Every Basket.</h3>
+                    </div>
+                </div>
+
+                <div class="dim-signature-dishes">
+
+                    <article class="dim-signature-dish">
+                        <div class="dim-signature-dish-number">01</div>
+                        <div class="dim-signature-dish-content">
+                            <h3>Crystal Har Gow</h3>
+                            <p>
+                                Delicate wrappers with a juicy shrimp filling
+                                and a beautifully tender texture.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </article>
+
+                    <article class="dim-signature-dish">
+                        <div class="dim-signature-dish-number">02</div>
+                        <div class="dim-signature-dish-content">
+                            <h3>Classic Siu Mai</h3>
+                            <p>
+                                Traditional open-top dumplings filled with
+                                savoury goodness in every bite.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </article>
+
+                    <article class="dim-signature-dish">
+                        <div class="dim-signature-dish-number">03</div>
+                        <div class="dim-signature-dish-content">
+                            <h3>Soft Bao Buns</h3>
+                            <p>
+                                Fluffy steamed buns with a comforting filling
+                                and a soft, cloud-like bite.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </article>
+
+                    <article class="dim-signature-dish">
+                        <div class="dim-signature-dish-number">04</div>
+                        <div class="dim-signature-dish-content">
+                            <h3>Garden Dumplings</h3>
+                            <p>
+                                Vegetable-filled dumplings with gentle
+                                seasoning and fresh, balanced flavours.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </article>
+
+                    <a href="steamed-dim-sum.html" class="dim-signature-menu-link">
+                        Explore All Dim Sum
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE ART OF STEAMING -->
+    <section class="dim-craft-section" id="steamed-craft">
+        <div class="dim-craft-container">
+
+            <div class="dim-craft-heading">
+                <span class="dim-craft-eyebrow">
+                    <i class="fa-solid fa-fire-burner"></i>
+                    THE ART OF STEAMING
+                </span>
+
+                <h2>Gentle Steam. <span>Beautiful Flavour.</span></h2>
+
+                <p>
+                    Great steamed dim sum is all about balance.
+                    From carefully prepared fillings to delicate wrappers,
+                    every detail helps preserve the flavour and texture.
+                </p>
+            </div>
+
+            <div class="dim-craft-grid">
+
+                <article class="dim-craft-card">
+                    <div class="dim-craft-number">01</div>
+                    <div class="dim-craft-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3>Well Prepared</h3>
+                    <p>
+                        Carefully selected ingredients and well-balanced
+                        fillings create flavourful bites in every basket.
+                    </p>
+                </article>
+
+                <article class="dim-craft-card">
+                    <div class="dim-craft-number">02</div>
+                    <div class="dim-craft-icon">
+                        <i class="fa-solid fa-bowl-rice"></i>
+                    </div>
+                    <h3>Delicate Wrappers</h3>
+                    <p>
+                        Tender wrappers complement the fillings, creating
+                        the soft texture that makes dim sum special.
+                    </p>
+                </article>
+
+                <article class="dim-craft-card">
+                    <div class="dim-craft-number">03</div>
+                    <div class="dim-craft-icon">
+                        <i class="fa-solid fa-temperature-half"></i>
+                    </div>
+                    <h3>Careful Steaming</h3>
+                    <p>
+                        Proper steaming helps cook each dumpling evenly
+                        while keeping its texture tender.
+                    </p>
+                </article>
+
+                <article class="dim-craft-card">
+                    <div class="dim-craft-number">04</div>
+                    <div class="dim-craft-icon">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                    </div>
+                    <h3>Fresh To Your Table</h3>
+                    <p>
+                        Served warm and ready to share, every basket
+                        brings comfort to your dim sum experience.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="dim-craft-bottom">
+                <div class="dim-craft-bottom-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <p>
+                    <strong>The beauty is in the details.</strong>
+                    From the first fold to the final basket, every bite
+                    celebrates the tradition of steamed dim sum.
+                </p>
+
+                <a href="booking.html" class="dim-craft-button">
+                    Join Us At The Table
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: PERFECT PAIRINGS -->
+    <section class="dim-pairing-section steamed-pairing-section">
+        <div class="dim-pairing-container">
+
+            <div class="dim-pairing-heading">
+                <span class="dim-pairing-label">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    A PERFECT MATCH
+                </span>
+                <h2>Steamed Bites & <span>Soothing Sips.</span></h2>
+                <p>
+                    Complete your dim sum experience with comforting teas
+                    and refreshing flavours that complement every delicate bite.
+                </p>
+            </div>
+
+            <div class="dim-pairing-grid">
+
+                <article class="dim-pairing-card">
+                    <div class="dim-pairing-image">
+                        <img src="images/jasmine-tea.jpg" alt="Traditional jasmine tea">
+                        <span class="dim-pairing-number">01</span>
+                    </div>
+                    <div class="dim-pairing-content">
+                        <h3>Jasmine Tea</h3>
+                        <p>
+                            Light floral notes that beautifully complement
+                            delicate dumplings and steamed bao.
+                        </p>
+                        <span class="dim-pairing-tag">Light & Floral</span>
+                    </div>
+                </article>
+
+                <article class="dim-pairing-card">
+                    <div class="dim-pairing-image">
+                        <img src="images/chinese-green-tea.jpg" alt="Chinese green tea">
+                        <span class="dim-pairing-number">02</span>
+                    </div>
+                    <div class="dim-pairing-content">
+                        <h3>Chinese Green Tea</h3>
+                        <p>
+                            A clean, refreshing tea that balances the savoury
+                            flavours of your favourite steamed bites.
+                        </p>
+                        <span class="dim-pairing-tag">Fresh & Balanced</span>
+                    </div>
+                </article>
+
+                <article class="dim-pairing-card">
+                    <div class="dim-pairing-image">
+                        <img src="images/oolong-tea.jpg" alt="Traditional oolong tea">
+                        <span class="dim-pairing-number">03</span>
+                    </div>
+                    <div class="dim-pairing-content">
+                        <h3>Oolong Tea</h3>
+                        <p>
+                            A fragrant, gently roasted tea that adds depth
+                            to a relaxed dim sum dining experience.
+                        </p>
+                        <span class="dim-pairing-tag">Rich & Aromatic</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="dim-pairing-note">
+                <i class="fa-solid fa-leaf"></i>
+                <p>Good food, warm tea, and a table worth sharing.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 6: STEAMED DIM SUM CTA -->
+    <section class="dim-final-cta steamed-final-cta" style="background-image: url('images/s-cta.jpg');">
+        <div class="dim-final-cta-overlay"></div>
+
+        <div class="dim-final-cta-container">
+            <span class="dim-final-cta-label">
+                <i class="fa-solid fa-bowl-food"></i>
+                A LITTLE TASTE OF TRADITION
+            </span>
+
+            <h2>Make Room For <span>One More Basket.</span></h2>
+
+            <p>
+                Gather around the table, share your favourite steamed
+                dumplings, and enjoy the simple pleasure of freshly
+                prepared dim sum with the people you love.
+            </p>
+
+            <div class="dim-final-cta-actions">
+                <a href="booking.html" class="dim-final-cta-primary">
+                    Reserve Your Table
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="steamed-dim-sum.html" class="dim-final-cta-secondary">
+                    Explore Full Menu
+                </a>
+            </div>
+
+            <div class="dim-final-cta-note">
+                <i class="fa-solid fa-heart"></i>
+                Good food is always better when shared.
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================
+     FOOTER
+========================= -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+            <div class="footer-container">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="Dim Sum Street">
+                    </a>
+
+                    <p class="footer-description">
+                        Traditional dim sum, handcrafted baskets, and
+                        warm dining moments made to bring everyone together.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="weekend-brunch.html">
+                                Weekend Brunch
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="locations.html">Locations</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Our Menu -->
+                <div class="footer-column">
+
+                    <h3>Our Menu</h3>
+
+                    <ul>
+                        <li>
+                            <a href="steamed-dim-sum.html">
+                                Steamed Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="fried-dim-sum.html">
+                                Fried Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="signature-baskets.html">
+                                Signature Baskets
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="desserts.html">
+                                Desserts
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h3>Visit Us</h3>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <p>
+                            24 Bamboo Street,<br>
+                            Chinatown, Chennai
+                        </p>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <a href="mailto:hello@dimsumstreet.com">
+                            hello@dimsumstreet.com
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <p>
+                            Mon – Sun: 10:30 AM – 10:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-container">
+
+                <p>
+                    © 2026 Dim Sum Street. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <span>|</span>
+
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

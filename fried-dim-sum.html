@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dim Sum Street</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Noto+Serif+SC:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+     HEADER
+========================= -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="Dim Sum Street">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+
+                    <!-- Home Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span class="nav-text">About</span></a>
+                    </li>
+
+                    <!-- Menu Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">Steamed Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="fried-dim-sum.html">Fried Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="signature-baskets.html">Signature Baskets</a>
+                            </li>
+                            <li>
+                                <a href="desserts.html">Desserts</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="nav-item">
+                        <a href="weekend-brunch.html" class="nav-link">
+                            <span class="nav-text">Weekend Brunch</span>
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="nav-item">
+                        <a href="locations.html" class="nav-link">
+                            <span class="nav-text">Locations</span>
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Desktop Header Actions -->
+            <div class="header-actions">
+
+                <!-- Dark Mode -->
+                <button class="header-toggle theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button class="header-toggle rtl-toggle" id="rtlToggle" type="button" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </button>
+
+                <!-- Login -->
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve Table -->
+                <a href="booking.html" class="reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+
+                    <!-- Home -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="mobile-nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <!-- Menu -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">
+                                    Steamed Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fried-dim-sum.html">
+                                    Fried Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="signature-baskets.html">
+                                    Signature Baskets
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="desserts.html">
+                                    Desserts
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="mobile-nav-item">
+                        <a href="weekend-brunch.html">
+                            Weekend Brunch
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="mobile-nav-item">
+                        <a href="locations.html">
+                            Locations
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="mobile-nav-item">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Mobile Actions -->
+            <div class="mobile-actions">
+
+                <div class="mobile-action-row">
+
+                    <!-- Dark Mode -->
+                    <button class="mobile-action-btn" id="mobileThemeToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-moon"></i>
+                            Dark Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- RTL -->
+                    <button class="mobile-action-btn" id="mobileRtlToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            RTL Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Login -->
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve -->
+                <a href="booking.html" class="mobile-reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="page-hero about-page-hero" style="background-image: url('images/f-hero.jpg');">
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="page-hero-container">
+
+            <div class="page-hero-content">
+
+                <span class="page-hero-label">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    GOLDEN & CRISPY FAVOURITES
+                </span>
+
+                <h1>
+                    Crispy Outside.
+                    <span>Delicious Inside.</span>
+                </h1>
+
+                <p>
+                    Crispy, golden and irresistibly delicious — explore our collection of fried dim sum favourites,
+                    freshly prepared for the perfect crunch.
+                </p>
+
+                <div class="page-hero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Weekend Brunch</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION 2: FRIED DIM SUM COLLECTION -->
+    <section class="dim-collection-section" id="fried-collection">
+        <div class="dim-collection-container">
+
+            <div class="dim-collection-heading">
+                <span class="dim-collection-eyebrow">
+                    <i class="fa-solid fa-fire-burner"></i>
+                    GOLDEN & CRISPY FAVOURITES
+                </span>
+
+                <h2>Golden, Crispy & <span>Full of Flavour.</span></h2>
+
+                <p>
+                    Discover the irresistible crunch of freshly fried
+                    dim sum, from savoury dumplings to golden bites
+                    that make every gathering more delicious.
+                </p>
+            </div>
+
+            <div class="dim-collection-grid">
+
+                <article class="dim-collection-card">
+                    <div class="dim-collection-image">
+                        <img src="images/fried-spring-rolls.jpg" alt="Golden crispy Chinese spring rolls">
+                        <span class="dim-collection-tag">CRISPY CLASSIC</span>
+                    </div>
+                    <div class="dim-collection-content">
+                        <span class="dim-collection-category">CRISPY BITES</span>
+                        <h3>Golden Spring Rolls</h3>
+                        <p>
+                            Crunchy wrappers filled with a savoury
+                            mixture, served with a dipping sauce.
+                        </p>
+                        <a href="steamed-dim-sum.html" class="dim-collection-link">
+                            Explore Menu
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="dim-collection-card">
+                    <div class="dim-collection-image">
+                        <img src="images/fried-potstickers.jpg" alt="Golden pan-fried Chinese dumplings">
+                        <span class="dim-collection-tag">GUEST FAVOURITE</span>
+                    </div>
+                    <div class="dim-collection-content">
+                        <span class="dim-collection-category">PAN-FRIED</span>
+                        <h3>Golden Potstickers</h3>
+                        <p>
+                            Tender dumplings with beautifully crisp bases
+                            and savoury fillings in every bite.
+                        </p>
+                        <a href="steamed-dim-sum.html" class="dim-collection-link">
+                            Explore Menu
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="dim-collection-card">
+                    <div class="dim-collection-image">
+                        <img src="images/fried-wontons.jpg" alt="Crispy fried wontons served with dipping sauce">
+                        <span class="dim-collection-tag">CRUNCHY PICK</span>
+                    </div>
+                    <div class="dim-collection-content">
+                        <span class="dim-collection-category">CRISPY WONTONS</span>
+                        <h3>Crispy Wontons</h3>
+                        <p>
+                            Light, crunchy wonton parcels made for dipping
+                            and enjoying with friends.
+                        </p>
+                        <a href="steamed-dim-sum.html" class="dim-collection-link">
+                            Explore Menu
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="dim-collection-card">
+                    <div class="dim-collection-image">
+                        <img src="images/fried-sesame-balls.jpg" alt="Golden fried Chinese sesame balls">
+                        <span class="dim-collection-tag">SWEET FAVOURITE</span>
+                    </div>
+                    <div class="dim-collection-content">
+                        <span class="dim-collection-category">SWEET BITES</span>
+                        <h3>Golden Sesame Balls</h3>
+                        <p>
+                            Crispy sesame-coated treats with a full soft,
+                            chewy centre for a sweet finish.
+                        </p>
+                        <a href="steamed-dim-sum.html" class="dim-collection-link">
+                            Explore Menu
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="dim-collection-bottom">
+                <p>
+                    <i class="fa-solid fa-fire"></i>
+                    Golden on the outside. Delicious to the last bite.
+                </p>
+
+                <a href="steamed-dim-sum.html" class="dim-collection-button">
+                    View Full Menu
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 3: FRIED SIGNATURE FAVOURITES -->
+    <section class="dim-signature-section" id="fried-signatures">
+        <div class="dim-signature-container">
+
+            <div class="dim-signature-heading">
+                <span class="dim-signature-eyebrow">
+                    <i class="fa-solid fa-fire-burner"></i>
+                    GOLDEN FROM THE PAN
+                </span>
+
+                <h2>Crunch Into <span>Something Special.</span></h2>
+
+                <p>
+                    From crispy golden wrappers to perfectly pan-fried
+                    dumplings, discover satisfying bites packed with flavour
+                    and made to be shared.
+                </p>
+            </div>
+
+            <div class="dim-signature-layout">
+
+                <div class="dim-signature-featured-image">
+                    <img src="images/fried-signature-platter.jpg"
+                        alt="Golden fried dim sum favourites arranged on a platter">
+
+                    <div class="dim-signature-image-overlay">
+                        <span>GOLDEN & CRISPY</span>
+                        <h3>Every Crunch Counts.</h3>
+                    </div>
+                </div>
+
+                <div class="dim-signature-dishes">
+
+                    <article class="dim-signature-dish">
+                        <div class="dim-signature-dish-number">01</div>
+                        <div class="dim-signature-dish-content">
+                            <h3>Golden Spring Rolls</h3>
+                            <p>
+                                Crisp pastry wrapped around a savoury filling,
+                                perfect with a flavourful dipping sauce.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </article>
+
+                    <article class="dim-signature-dish">
+                        <div class="dim-signature-dish-number">02</div>
+                        <div class="dim-signature-dish-content">
+                            <h3>Pan-Fried Potstickers</h3>
+                            <p>
+                                Tender dumplings with golden, crisp bases
+                                and delicious savoury fillings.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </article>
+
+                    <article class="dim-signature-dish">
+                        <div class="dim-signature-dish-number">03</div>
+                        <div class="dim-signature-dish-content">
+                            <h3>Crispy Wontons</h3>
+                            <p>
+                                Light, crunchy wonton parcels made for dipping
+                                and enjoying with friends.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </article>
+
+                    <article class="dim-signature-dish">
+                        <div class="dim-signature-dish-number">04</div>
+                        <div class="dim-signature-dish-content">
+                            <h3>Golden Sesame Balls</h3>
+                            <p>
+                                Sesame-coated treats with a crisp exterior
+                                and a soft, chewy centre.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </article>
+
+                    <a href="steamed-dim-sum.html" class="dim-signature-menu-link">
+                        Explore All Dim Sum
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE PERFECT GOLDEN CRUNCH -->
+    <section class="dim-craft-section" id="fried-craft">
+        <div class="dim-craft-container">
+
+            <div class="dim-craft-heading">
+                <span class="dim-craft-eyebrow">
+                    <i class="fa-solid fa-fire"></i>
+                    THE PERFECT GOLDEN CRUNCH
+                </span>
+
+                <h2>Golden Outside. <span>Delicious Inside.</span></h2>
+
+                <p>
+                    The secret to satisfying fried dim sum lies in its texture.
+                    Crisp outer layers, flavourful fillings and a delicious
+                    contrast in every bite make these favourites irresistible.
+                </p>
+            </div>
+
+            <div class="dim-craft-grid">
+
+                <article class="dim-craft-card">
+                    <div class="dim-craft-number">01</div>
+                    <div class="dim-craft-icon">
+                        <i class="fa-solid fa-wheat-awn"></i>
+                    </div>
+                    <h3>Carefully Wrapped</h3>
+                    <p>
+                        Well-prepared wrappers help create a crisp exterior
+                        while keeping the filling delicious.
+                    </p>
+                </article>
+
+                <article class="dim-craft-card">
+                    <div class="dim-craft-number">02</div>
+                    <div class="dim-craft-icon">
+                        <i class="fa-solid fa-temperature-high"></i>
+                    </div>
+                    <h3>Heat & Timing</h3>
+                    <p>
+                        Proper cooking temperature and timing help develop
+                        an golden finish and crisp texture.
+                    </p>
+                </article>
+
+                <article class="dim-craft-card">
+                    <div class="dim-craft-number">03</div>
+                    <div class="dim-craft-icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3>Texture In Every Bite</h3>
+                    <p>
+                        Enjoy the contrast between crunchy outer layers
+                        and savoury fillings in our fried favourites.
+                    </p>
+                </article>
+
+                <article class="dim-craft-card">
+                    <div class="dim-craft-number">04</div>
+                    <div class="dim-craft-icon">
+                        <i class="fa-solid fa-bell-concierge"></i>
+                    </div>
+                    <h3>Ready To Enjoy</h3>
+                    <p>
+                        Served warm with delicious accompaniments, these
+                        crispy bites are made for sharing around.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="dim-craft-bottom">
+                <div class="dim-craft-bottom-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+
+                <p>
+                    <strong>Every crunch has a story.</strong>
+                    Discover the textures, flavours and little details
+                    that make fried dim sum a favourite.
+                </p>
+
+                <a href="booking.html" class="dim-craft-button">
+                    Join Us At The Table
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: PERFECT PAIRINGS -->
+    <section class="dim-pairing-section fried-pairing-section">
+        <div class="dim-pairing-container">
+
+            <div class="dim-pairing-heading">
+                <span class="dim-pairing-label">
+                    <i class="fa-solid fa-fire-burner"></i>
+                    DIP, CRUNCH & ENJOY
+                </span>
+                <h2>Every Crunch Deserves <span>A Great Dip.</span></h2>
+                <p>
+                    Bring your golden fried favourites to life with flavourful
+                    dipping sauces and sides made for sharing.
+                </p>
+            </div>
+
+            <div class="dim-pairing-grid">
+
+                <article class="dim-pairing-card">
+                    <div class="dim-pairing-image">
+                        <img src="images/chilli-garlic-sauce.jpg" alt="Chilli garlic dipping sauce">
+                        <span class="dim-pairing-number">01</span>
+                    </div>
+                    <div class="dim-pairing-content">
+                        <h3>Chilli Garlic Sauce</h3>
+                        <p>
+                            A bold, spicy dip that adds a lively kick to
+                            crispy wontons and golden spring rolls.
+                        </p>
+                        <span class="dim-pairing-tag">Bold & Spicy</span>
+                    </div>
+                </article>
+
+                <article class="dim-pairing-card">
+                    <div class="dim-pairing-image">
+                        <img src="images/sweet-chilli-sauce.jpg" alt="Sweet chilli dipping sauce">
+                        <span class="dim-pairing-number">02</span>
+                    </div>
+                    <div class="dim-pairing-content">
+                        <h3>Sweet Chilli Dip</h3>
+                        <p>
+                            Sweet, tangy and gently spicy — a delicious match
+                            for crunchy bites and crispy rolls.
+                        </p>
+                        <span class="dim-pairing-tag">Sweet & Tangy</span>
+                    </div>
+                </article>
+
+                <article class="dim-pairing-card">
+                    <div class="dim-pairing-image">
+                        <img src="images/asian-dipping-sauce.jpg" alt="Asian soy dipping sauce">
+                        <span class="dim-pairing-number">03</span>
+                    </div>
+                    <div class="dim-pairing-content">
+                        <h3>Soy Sesame Dip</h3>
+                        <p>
+                            A savoury blend with sesame notes that pairs
+                            wonderfully with pan-fried dumplings.
+                        </p>
+                        <span class="dim-pairing-tag">Savoury & Nutty</span>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="dim-pairing-note">
+                <i class="fa-solid fa-utensils"></i>
+                <p>Pick your favourite dip, grab a crispy bite, and enjoy.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: FRIED DIM SUM CTA -->
+    <section class="dim-final-cta fried-final-cta" style="background-image: url('images/f-cta.jpg');">
+        <div class="dim-final-cta-overlay"></div>
+
+        <div class="dim-final-cta-container">
+            <span class="dim-final-cta-label">
+                <i class="fa-solid fa-fire-burner"></i>
+                YOUR NEXT CRUNCH IS CALLING
+            </span>
+
+            <h2>Follow The Crunch. <span>Find Your Favourite.</span></h2>
+
+            <p>
+                From golden spring rolls to crispy wontons, bring your
+                appetite and discover fried dim sum favourites made
+                for dipping, sharing, and enjoying together.
+            </p>
+
+            <div class="dim-final-cta-actions">
+                <a href="booking.html" class="dim-final-cta-primary">
+                    Reserve Your Table
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="steamed-dim-sum.html" class="dim-final-cta-secondary">
+                    Explore Full Menu
+                </a>
+            </div>
+
+            <div class="dim-final-cta-note">
+                <i class="fa-solid fa-star"></i>
+                Golden bites. Great company. Memorable moments.
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+     FOOTER
+========================= -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+            <div class="footer-container">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="Dim Sum Street">
+                    </a>
+
+                    <p class="footer-description">
+                        Traditional dim sum, handcrafted baskets, and
+                        warm dining moments made to bring everyone together.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="weekend-brunch.html">
+                                Weekend Brunch
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="locations.html">Locations</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Our Menu -->
+                <div class="footer-column">
+
+                    <h3>Our Menu</h3>
+
+                    <ul>
+                        <li>
+                            <a href="steamed-dim-sum.html">
+                                Steamed Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="fried-dim-sum.html">
+                                Fried Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="signature-baskets.html">
+                                Signature Baskets
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="desserts.html">
+                                Desserts
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h3>Visit Us</h3>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <p>
+                            24 Bamboo Street,<br>
+                            Chinatown, Chennai
+                        </p>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <a href="mailto:hello@dimsumstreet.com">
+                            hello@dimsumstreet.com
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <p>
+                            Mon – Sun: 10:30 AM – 10:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-container">
+
+                <p>
+                    © 2026 Dim Sum Street. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <span>|</span>
+
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

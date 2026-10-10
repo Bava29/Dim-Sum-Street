@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dim Sum Street</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Noto+Serif+SC:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+     HEADER
+========================= -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="Dim Sum Street">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+
+                    <!-- Home Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span class="nav-text">About</span></a>
+                    </li>
+
+                    <!-- Menu Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">Steamed Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="fried-dim-sum.html">Fried Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="signature-baskets.html">Signature Baskets</a>
+                            </li>
+                            <li>
+                                <a href="desserts.html">Desserts</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="nav-item">
+                        <a href="weekend-brunch.html" class="nav-link">
+                            <span class="nav-text">Weekend Brunch</span>
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="nav-item">
+                        <a href="locations.html" class="nav-link">
+                            <span class="nav-text">Locations</span>
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Desktop Header Actions -->
+            <div class="header-actions">
+
+                <!-- Dark Mode -->
+                <button class="header-toggle theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button class="header-toggle rtl-toggle" id="rtlToggle" type="button" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </button>
+
+                <!-- Login -->
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve Table -->
+                <a href="booking.html" class="reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+
+                    <!-- Home -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="mobile-nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <!-- Menu -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">
+                                    Steamed Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fried-dim-sum.html">
+                                    Fried Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="signature-baskets.html">
+                                    Signature Baskets
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="desserts.html">
+                                    Desserts
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="mobile-nav-item">
+                        <a href="weekend-brunch.html">
+                            Weekend Brunch
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="mobile-nav-item">
+                        <a href="locations.html">
+                            Locations
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="mobile-nav-item">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Mobile Actions -->
+            <div class="mobile-actions">
+
+                <div class="mobile-action-row">
+
+                    <!-- Dark Mode -->
+                    <button class="mobile-action-btn" id="mobileThemeToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-moon"></i>
+                            Dark Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- RTL -->
+                    <button class="mobile-action-btn" id="mobileRtlToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            RTL Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Login -->
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve -->
+                <a href="booking.html" class="mobile-reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="page-hero about-page-hero" style="background-image: url('images/about-hero.jpg');">
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="page-hero-container">
+
+            <div class="page-hero-content">
+
+                <span class="page-hero-label">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    ABOUT DIM SUM STREET
+                </span>
+
+                <h1>
+                    A Table Full Of
+                    <span>Tradition.</span>
+                </h1>
+
+                <p>
+                    Discover the story, people and traditions behind
+                    every basket served at Dim Sum Street.
+                </p>
+
+                <div class="page-hero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>About</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     ABOUT — OUR STORY
+========================================= -->
+
+    <section class="about-story-section">
+
+        <div class="about-story-container">
+
+            <div class="about-story-heading">
+
+                <span class="about-story-label">OUR STORY</span>
+
+                <h2>Where Our Story Begins</h2>
+
+                <p>
+                    A love for traditional dim sum, good food and bringing
+                    people together is at the heart of Dim Sum Street.
+                </p>
+
+            </div>
+
+
+            <div class="about-story-main">
+
+                <div class="about-story-image">
+                    <img src="images/about-story.jpg" alt="Traditional dim sum served at Dim Sum Street">
+                </div>
+
+                <div class="about-story-content">
+
+                    <h3>
+                        Tradition Served With Heart
+                    </h3>
+
+                    <p>
+                        Dim Sum Street was created with a simple idea —
+                        to bring the warmth and spirit of traditional
+                        Chinese dim sum to a welcoming modern table.
+                    </p>
+
+                    <p>
+                        Inspired by the lively streets, tea houses and
+                        timeless food traditions of China, our restaurant
+                        is a place where handcrafted baskets and freshly
+                        brewed tea come together with good company.
+                    </p>
+
+                    <p>
+                        Every dish is prepared with care, using thoughtfully
+                        selected ingredients and traditional techniques.
+                        We believe that great food tastes even better when
+                        it is shared.
+                    </p>
+
+                    <div class="about-story-signature">
+                        <span>DIM SUM STREET</span>
+                        <strong>Tradition on every table.</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     ABOUT — OUR PHILOSOPHY
+========================================= -->
+
+    <section class="about-philosophy-section">
+
+        <div class="about-philosophy-container">
+
+            <div class="about-philosophy-heading">
+
+                <span class="about-philosophy-label">
+                    OUR PHILOSOPHY
+                </span>
+
+                <h2>What Makes Every Table Special</h2>
+
+                <p>
+                    At Dim Sum Street, food is only part of the experience.
+                    We care about the craft, the people and the moments
+                    created around every table.
+                </p>
+
+            </div>
+
+
+            <div class="about-philosophy-list">
+
+                <!-- Philosophy 01 -->
+                <div class="about-philosophy-item">
+
+                    <div class="about-philosophy-number">
+                        01
+                    </div>
+
+                    <div class="about-philosophy-icon">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+
+                    <div class="about-philosophy-content">
+                        <h3>Made With Care</h3>
+
+                        <p>
+                            Every basket is prepared with patience,
+                            attention to detail and respect for the
+                            traditional craft of dim sum.
+                        </p>
+                    </div>
+
+                    <span class="about-philosophy-word">
+                        CRAFT
+                    </span>
+
+                </div>
+
+
+                <!-- Philosophy 02 -->
+                <div class="about-philosophy-item">
+
+                    <div class="about-philosophy-number">
+                        02
+                    </div>
+
+                    <div class="about-philosophy-icon">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+
+                    <div class="about-philosophy-content">
+                        <h3>Thoughtfully Sourced</h3>
+
+                        <p>
+                            From fresh ingredients to fragrant tea,
+                            we choose what goes onto your table with
+                            quality and flavour in mind.
+                        </p>
+                    </div>
+
+                    <span class="about-philosophy-word">
+                        QUALITY
+                    </span>
+
+                </div>
+
+
+                <!-- Philosophy 03 -->
+                <div class="about-philosophy-item">
+
+                    <div class="about-philosophy-number">
+                        03
+                    </div>
+
+                    <div class="about-philosophy-icon">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+
+                    <div class="about-philosophy-content">
+                        <h3>Always Better Together</h3>
+
+                        <p>
+                            Dim sum was made for sharing, and we believe
+                            the best flavours become even better when
+                            enjoyed with people you love.
+                        </p>
+                    </div>
+
+                    <span class="about-philosophy-word">
+                        TOGETHER
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     ABOUT — THE CRAFT
+========================================= -->
+
+    <section class="about-craft-section">
+
+        <div class="about-craft-container">
+
+            <div class="about-craft-heading">
+
+                <span class="about-craft-label">
+                    THE CRAFT
+                </span>
+
+                <h2>The Craft Behind Every Basket</h2>
+
+                <p>
+                    From carefully selected ingredients to the final
+                    bamboo basket, every step is handled with patience,
+                    precision and tradition.
+                </p>
+
+            </div>
+
+
+            <div class="about-craft-process">
+
+                <!-- Step 01 -->
+                <div class="about-craft-step">
+
+                    <div class="about-craft-image">
+                        <img src="images/craft-ingredients.jpg" alt="Fresh ingredients prepared for dim sum">
+                    </div>
+
+                    <div class="about-craft-number">
+                        01
+                    </div>
+
+                    <div class="about-craft-content">
+
+                        <span>FIRST STEP</span>
+
+                        <h3>Choose With Care</h3>
+
+                        <p>
+                            Fresh vegetables, quality meats, delicate
+                            wrappers and aromatic ingredients is the taste of every basket.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Step 02 -->
+                <div class="about-craft-step">
+
+                    <div class="about-craft-image">
+                        <img src="images/craft-preparation.jpg" alt="Chef preparing handmade dim sum">
+                    </div>
+
+                    <div class="about-craft-number">
+                        02
+                    </div>
+
+                    <div class="about-craft-content">
+
+                        <span>SECOND STEP</span>
+
+                        <h3>Shape By Hand</h3>
+
+                        <p>
+                            Our dim sum is carefully folded, filled and
+                            shaped by hand, keeping the details that make piece special.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Step 03 -->
+                <div class="about-craft-step">
+
+                    <div class="about-craft-image">
+                        <img src="images/craft-steaming.jpg" alt="Dim sum steaming in bamboo baskets">
+                    </div>
+
+                    <div class="about-craft-number">
+                        03
+                    </div>
+
+                    <div class="about-craft-content">
+
+                        <span>FINAL STEP</span>
+
+                        <h3>Steam & Serve</h3>
+
+                        <p>
+                            Each basket is cooked to order and brought
+                            straight to the table while it is warm and ready to share.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     ABOUT — OUR TEAM
+========================================= -->
+
+    <section class="about-team-section">
+
+        <div class="about-team-container">
+
+            <!-- Section Heading -->
+            <div class="about-team-heading">
+
+                <span class="about-team-label">
+                    MEET OUR TEAM
+                </span>
+
+                <h2>The People Behind The Street</h2>
+
+                <p>
+                    From the kitchen to the table, our team brings
+                    skill, warmth and passion to every dining experience.
+                </p>
+
+            </div>
+
+
+            <!-- Team Grid -->
+            <div class="about-team-grid">
+
+                <!-- Team Member 01 -->
+                <div class="about-team-card">
+
+                    <div class="about-team-card-image">
+                        <img src="images/team-chef.jpg" alt="Head Chef at Dim Sum Street">
+                    </div>
+
+                    <div class="about-team-card-content">
+
+                        <span>HEAD CHEF</span>
+
+                        <h3>Chef Wei Chen</h3>
+
+                        <p>Dim Sum Chef</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Team Member 02 -->
+                <div class="about-team-card">
+
+                    <div class="about-team-card-image">
+                        <img src="images/team-1.jpg" alt="Dim Sum Street team member">
+
+                    </div>
+
+                    <div class="about-team-card-content">
+
+                        <span>KITCHEN</span>
+
+                        <h3>Lin Zhao</h3>
+
+                        <p>Dim Sum Chef</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Team Member 03 -->
+                <div class="about-team-card">
+
+                    <div class="about-team-card-image">
+                        <img src="images/team-2.jpg" alt="Dim Sum Street team member">
+                    </div>
+
+                    <div class="about-team-card-content">
+
+                        <span>TEA HOUSE</span>
+
+                        <h3>David Wong</h3>
+
+                        <p>Tea Specialist</p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Team Member 04 -->
+                <div class="about-team-card">
+
+                    <div class="about-team-card-image">
+                        <img src="images/team-3.jpg" alt="Dim Sum Street team member">
+                    </div>
+
+                    <div class="about-team-card-content">
+
+                        <span>SERVICE</span>
+
+                        <h3>Riya Lee</h3>
+
+                        <p>Floor Manager</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     ABOUT — A TASTE OF TRADITION
+========================================= -->
+
+    <section class="about-tradition-section">
+
+        <div class="about-tradition-container">
+
+            <!-- Section Heading -->
+            <div class="about-tradition-heading">
+
+                <span class="about-tradition-label">
+                    A TASTE OF TRADITION
+                </span>
+
+                <h2>Keeping The Classics Alive</h2>
+
+                <p>
+                    Traditional flavours, timeless techniques and the
+                    simple joy of sharing food continue to shape everything
+                    we serve at Dim Sum Street.
+                </p>
+
+            </div>
+
+
+            <!-- Tradition Content -->
+            <div class="about-tradition-main">
+
+                <div class="about-tradition-image">
+                    <img src="images/about-tradition.jpg" alt="Traditional Chinese dim sum and tea">
+                </div>
+
+
+                <div class="about-tradition-content">
+
+                    <div class="about-tradition-intro">
+
+                        <span>OUR CONNECTION TO TRADITION</span>
+
+                        <h3>
+                            From The Tea House
+                            To Your Table
+                        </h3>
+
+                        <p>
+                            Dim sum has always been about more than food.
+                            It is a tradition built around tea, conversation
+                            and the pleasure of sharing many little dishes
+                            together.
+                        </p>
+
+                        <p>
+                            We honour that spirit through the way we prepare,
+                            serve and enjoy our food — bringing familiar
+                            flavours into a warm and contemporary setting.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-tradition-highlights">
+
+                        <div class="about-tradition-highlight">
+
+                            <div class="about-tradition-icon">
+                                <i class="fa-solid fa-mug-hot"></i>
+                            </div>
+
+                            <div>
+                                <h4>Tea Culture</h4>
+                                <p>
+                                    A warm cup always belongs at the table.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-tradition-highlight">
+
+                            <div class="about-tradition-icon">
+                                <i class="fa-solid fa-basket-shopping"></i>
+                            </div>
+
+                            <div>
+                                <h4>Dim Sum Craft</h4>
+                                <p>
+                                    Small baskets made with patience and care.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="about-tradition-highlight">
+
+                            <div class="about-tradition-icon">
+                                <i class="fa-solid fa-people-group"></i>
+                            </div>
+
+                            <div>
+                                <h4>Shared Tables</h4>
+                                <p>
+                                    Food tastes better when everyone joins in.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     ABOUT — FAQ
+========================================= -->
+
+    <section class="about-faq-section">
+
+        <div class="about-faq-container">
+
+            <!-- Section Heading -->
+            <div class="about-faq-heading">
+
+                <span class="about-faq-label">
+                    FREQUENTLY ASKED QUESTIONS
+                </span>
+
+                <h2>Questions, Answered</h2>
+
+                <p>
+                    Everything you need to know before your next
+                    visit to Dim Sum Street.
+                </p>
+
+            </div>
+
+
+            <!-- FAQ List -->
+            <div class="about-faq-list">
+
+                <!-- FAQ 01 -->
+                <div class="about-faq-item">
+
+                    <button class="about-faq-question" type="button">
+
+                        <span>
+                            Do I need to make a reservation?
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="about-faq-answer">
+
+                        <p>
+                            Reservations are recommended, especially during
+                            weekends and busy dining hours. Walk-ins are also
+                            welcome depending on table availability.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 02 -->
+                <div class="about-faq-item">
+
+                    <button class="about-faq-question" type="button">
+
+                        <span>
+                            What time does Dim Sum Street open?
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="about-faq-answer">
+
+                        <p>
+                            We are open daily from 10:00 AM to 10:00 PM,
+                            serving dim sum, tea and our full menu throughout
+                            the day.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 03 -->
+                <div class="about-faq-item">
+
+                    <button class="about-faq-question" type="button">
+
+                        <span>
+                            Do you offer vegetarian dim sum?
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="about-faq-answer">
+
+                        <p>
+                            Yes. We offer a selection of vegetarian-friendly
+                            dim sum and sides. Please let our team know about
+                            your preferences when ordering.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 04 -->
+                <div class="about-faq-item">
+
+                    <button class="about-faq-question" type="button">
+
+                        <span>
+                            Can I book a table for a large group?
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="about-faq-answer">
+
+                        <p>
+                            Absolutely. We welcome family gatherings,
+                            celebrations and group dining. For larger groups,
+                            we recommend contacting us in advance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 05 -->
+                <div class="about-faq-item">
+
+                    <button class="about-faq-question" type="button">
+
+                        <span>
+                            Do you offer takeaway?
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="about-faq-answer">
+
+                        <p>
+                            Yes. Selected dim sum favourites and dishes are
+                            available for takeaway. Please contact our team
+                            for current takeaway options.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 06 -->
+                <div class="about-faq-item">
+
+                    <button class="about-faq-question" type="button">
+
+                        <span>
+                            Can I host a private celebration at the restaurant?
+                        </span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                    <div class="about-faq-answer">
+
+                        <p>
+                            We would be happy to discuss special gatherings
+                            and celebrations. Contact our team to explore
+                            available arrangements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     ABOUT — VISIT & GATHER
+========================================= -->
+
+    <section class="about-visit-section" style="background-image: url('images/about-visit.jpg');">
+
+        <div class="about-visit-overlay"></div>
+
+        <div class="about-visit-container">
+
+            <div class="about-visit-content">
+
+                <span class="about-visit-label">
+                    COME TOGETHER
+                </span>
+
+                <h2>
+                    Your Table Is
+                    <span>Waiting.</span>
+                </h2>
+
+                <p>
+                    Bring your favourite people, order a basket or two,
+                    and experience the warmth of Dim Sum Street.
+                    Good food is always better when shared.
+                </p>
+
+                <div class="about-visit-actions">
+
+                    <a href="booking.html" class="about-visit-primary">
+                        Reserve A Table
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact.html" class="about-visit-secondary">
+                        Get In Touch
+                    </a>
+
+                </div>
+
+                <div class="about-visit-note">
+                    <i class="fa-solid fa-location-dot"></i>
+                    18 Lantern Street, Chinatown
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     FOOTER
+========================= -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+            <div class="footer-container">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="Dim Sum Street">
+                    </a>
+
+                    <p class="footer-description">
+                        Traditional dim sum, handcrafted baskets, and
+                        warm dining moments made to bring everyone together.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="weekend-brunch.html">
+                                Weekend Brunch
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="locations.html">Locations</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Our Menu -->
+                <div class="footer-column">
+
+                    <h3>Our Menu</h3>
+
+                    <ul>
+                        <li>
+                            <a href="steamed-dim-sum.html">
+                                Steamed Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="fried-dim-sum.html">
+                                Fried Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="signature-baskets.html">
+                                Signature Baskets
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="desserts.html">
+                                Desserts
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h3>Visit Us</h3>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <p>
+                            24 Bamboo Street,<br>
+                            Chinatown, Chennai
+                        </p>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <a href="mailto:hello@dimsumstreet.com">
+                            hello@dimsumstreet.com
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <p>
+                            Mon – Sun: 10:30 AM – 10:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-container">
+
+                <p>
+                    © 2026 Dim Sum Street. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <span>|</span>
+
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

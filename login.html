@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dim Sum Street</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Noto+Serif+SC:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+    <div class="auth-top-actions">
+        <button type="button" class="auth-toggle" id="themeToggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button type="button" class="auth-toggle" id="rtlToggle" aria-label="Toggle RTL direction">
+            <i class="fa-solid fa-right-left"></i>
+        </button>
+    </div>
+
+    <main class="auth-main">
+
+        <section class="auth-card">
+
+            <a href="index.html" class="auth-logo">
+                <img src="images/logo.png" alt="Dim Sum Street">
+            </a>
+
+            <div class="auth-heading">
+                <span class="auth-eyebrow">WELCOME BACK</span>
+                <h1>Good To <span>See You.</span></h1>
+                <p>Sign in to continue your Dim Sum Street experience.</p>
+            </div>
+
+            <form class="auth-form" id="loginForm">
+
+                <div class="auth-field">
+                    <label for="loginEmail">Email Address</label>
+                    <div class="auth-input-wrap">
+                        <i class="fa-regular fa-envelope auth-field-icon"></i>
+                        <input type="email" id="loginEmail" name="email" placeholder="Enter your email address"
+                            autocomplete="email" required>
+                    </div>
+                </div>
+
+                <div class="auth-field">
+                    <div class="auth-label-row">
+                        <label for="loginPassword">Password</label>
+                    </div>
+
+                    <div class="auth-input-wrap">
+                        <i class="fa-solid fa-lock auth-field-icon"></i>
+                        <input type="password" id="loginPassword" name="password" placeholder="Enter your password"
+                            autocomplete="current-password" required>
+
+                        <button type="button" class="auth-eye" data-password="loginPassword" aria-label="Show password">
+                            <i class="fa-regular fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="auth-options">
+
+                    <label class="auth-remember">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+
+                    <a href="#" class="auth-forgot">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+                <button type="submit" class="auth-submit">
+                    Login
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+            <div class="auth-divider">
+                <span></span>
+                <p>OR CONTINUE WITH</p>
+                <span></span>
+            </div>
+
+            <div class="auth-socials">
+
+                <button type="button" class="auth-social-button" id="googleLogin">
+                    <img src="images/google-logo.svg" alt="" class="auth-google-icon">
+                    <span>Google</span>
+                </button>
+
+                <button type="button" class="auth-social-button" id="facebookLogin">
+                    <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </button>
+
+                <!-- Apple -->
+                <button type="button" class="auth-social-button" id="appleLogin">
+                    <i class="fa-brands fa-apple auth-apple-icon" aria-hidden="true"></i>
+                    <span>Apple</span>
+                </button>
+
+            </div>
+
+            <p class="auth-switch">
+                Don't have an account?
+                <a href="register.html">Create Account</a>
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

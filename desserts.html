@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dim Sum Street</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Noto+Serif+SC:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+     HEADER
+========================= -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="Dim Sum Street">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+
+                    <!-- Home Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span class="nav-text">About</span></a>
+                    </li>
+
+                    <!-- Menu Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">Steamed Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="fried-dim-sum.html">Fried Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="signature-baskets.html">Signature Baskets</a>
+                            </li>
+                            <li>
+                                <a href="desserts.html">Desserts</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="nav-item">
+                        <a href="weekend-brunch.html" class="nav-link">
+                            <span class="nav-text">Weekend Brunch</span>
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="nav-item">
+                        <a href="locations.html" class="nav-link">
+                            <span class="nav-text">Locations</span>
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Desktop Header Actions -->
+            <div class="header-actions">
+
+                <!-- Dark Mode -->
+                <button class="header-toggle theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button class="header-toggle rtl-toggle" id="rtlToggle" type="button" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </button>
+
+                <!-- Login -->
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve Table -->
+                <a href="booking.html" class="reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+
+                    <!-- Home -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="mobile-nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <!-- Menu -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">
+                                    Steamed Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fried-dim-sum.html">
+                                    Fried Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="signature-baskets.html">
+                                    Signature Baskets
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="desserts.html">
+                                    Desserts
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="mobile-nav-item">
+                        <a href="weekend-brunch.html">
+                            Weekend Brunch
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="mobile-nav-item">
+                        <a href="locations.html">
+                            Locations
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="mobile-nav-item">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Mobile Actions -->
+            <div class="mobile-actions">
+
+                <div class="mobile-action-row">
+
+                    <!-- Dark Mode -->
+                    <button class="mobile-action-btn" id="mobileThemeToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-moon"></i>
+                            Dark Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- RTL -->
+                    <button class="mobile-action-btn" id="mobileRtlToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            RTL Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Login -->
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve -->
+                <a href="booking.html" class="mobile-reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="page-hero about-page-hero" style="background-image: url('images/d-hero.jpg');">
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="page-hero-container">
+
+            <div class="page-hero-content">
+
+                <span class="page-hero-label">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    A SWEET ENDING TO EVERY MEAL
+                </span>
+
+                <h1>
+                    Save Room for
+                    <span>Something Sweet..</span>
+                </h1>
+
+                <p>
+                    From silky mango pudding and golden sesame balls to delightful dessert platters and irresistible
+                    combo offers, discover the sweeter side of Dim Sum Street.
+                </p>
+
+                <div class="page-hero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Desserts</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SECTION 2: SWEET TREATS COLLECTION -->
+    <section class="dessert-collection-section">
+        <div class="dessert-collection-container">
+
+            <div class="dessert-collection-heading">
+                <span class="dessert-collection-label">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    A LITTLE SOMETHING SWEET
+                </span>
+
+                <h2>Sweet Moments, <span>One Bite at a Time.</span></h2>
+
+                <p>
+                    End your meal on a delicious note with our selection
+                    of Chinese-inspired sweets, delicate desserts and
+                    golden favourites made for every craving.
+                </p>
+            </div>
+
+            <div class="dessert-collection-grid">
+
+                <!-- DESSERT 1 -->
+                <article class="dessert-collection-card">
+                    <div class="dessert-collection-image">
+                        <img src="images/mango-pudding.jpg" alt="Creamy mango pudding dessert">
+
+                        <span class="dessert-collection-number">01</span>
+                    </div>
+
+                    <div class="dessert-collection-content">
+                        <span class="dessert-collection-category">
+                            COOL & CREAMY
+                        </span>
+
+                        <h3>Mango Pudding</h3>
+
+                        <p>
+                            Smooth, fruity and refreshing, with a
+                            delicate mango flavour in every spoonful.
+                        </p>
+
+                        <a href="#dessert-combos" class="dessert-collection-link">
+                            Discover Dessert Combos
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- DESSERT 2 -->
+                <article class="dessert-collection-card">
+                    <div class="dessert-collection-image">
+                        <img src="images/golden-sesame-balls.jpg" alt="Golden crispy Chinese sesame balls">
+
+                        <span class="dessert-collection-number">02</span>
+                    </div>
+
+                    <div class="dessert-collection-content">
+                        <span class="dessert-collection-category">
+                            GOLDEN & CRISPY
+                        </span>
+
+                        <h3>Sesame Balls</h3>
+
+                        <p>
+                            Crisp sesame-coated shells with a soft,
+                            chewy centre for a delightful sweet bite.
+                        </p>
+
+                        <a href="#dessert-combos" class="dessert-collection-link">
+                            Discover Dessert Combos
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- DESSERT 3 -->
+                <article class="dessert-collection-card">
+                    <div class="dessert-collection-image">
+                        <img src="images/chinese-egg-tarts.jpg" alt="Freshly baked Chinese egg tarts">
+
+                        <span class="dessert-collection-number">03</span>
+                    </div>
+
+                    <div class="dessert-collection-content">
+                        <span class="dessert-collection-category">
+                            BAKED FAVOURITES
+                        </span>
+
+                        <h3>Chinese Egg Tarts</h3>
+
+                        <p>
+                            Delicate pastry shells filled with a silky
+                            custard for a comforting classic treat.
+                        </p>
+
+                        <a href="#dessert-combos" class="dessert-collection-link">
+                            Discover Dessert Combos
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- DESSERT 4 -->
+                <article class="dessert-collection-card">
+                    <div class="dessert-collection-image">
+                        <img src="images/red-bean-sesame-dessert.jpg" alt="Chinese red bean dessert with sesame">
+
+                        <span class="dessert-collection-number">04</span>
+                    </div>
+
+                    <div class="dessert-collection-content">
+                        <span class="dessert-collection-category">
+                            TRADITIONAL SWEETS
+                        </span>
+
+                        <h3>Red Bean Delights</h3>
+
+                        <p>
+                            A comforting traditional-inspired sweet
+                            with rich, mellow flavours and a soft texture.
+                        </p>
+
+                        <a href="#dessert-combos" class="dessert-collection-link">
+                            Discover Dessert Combos
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="dessert-collection-bottom">
+                <div>
+                    <h3>Can't Choose Just One?</h3>
+                    <p>Make it sweeter with our dessert combo offers.</p>
+                </div>
+
+                <a href="#dessert-combos" class="dessert-collection-button">
+                    Explore Combo Offers
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION 3: DESSERT COMBO OFFERS -->
+    <section class="dessert-combo-section" id="dessert-combos">
+        <div class="dessert-combo-container">
+
+            <div class="dessert-combo-heading">
+                <span class="dessert-combo-label">
+                    <i class="fa-solid fa-gift"></i>
+                    SWEET DEALS, SWEETER MOMENTS
+                </span>
+
+                <h2>More Sweetness. <span>More to Share.</span></h2>
+
+                <p>
+                    Make dessert time extra special with our thoughtfully
+                    paired treats. Pick your favourite combination and
+                    enjoy a little more sweetness together.
+                </p>
+            </div>
+
+            <div class="dessert-combo-grid">
+
+                <!-- COMBO 1 -->
+                <article class="dessert-combo-card">
+                    <div class="dessert-combo-image">
+                        <img src="images/sweet-duo-combo.jpg" alt="Mango pudding and Chinese egg tart dessert combo">
+
+                        <span class="dessert-combo-badge">SWEET DUO</span>
+                    </div>
+
+                    <div class="dessert-combo-content">
+                        <span class="dessert-combo-subtitle">
+                            YOUR LITTLE SWEET ESCAPE
+                        </span>
+
+                        <h3>The Sweet Duo</h3>
+
+                        <p>
+                            A refreshing mango pudding paired with
+                            a delicate Chinese egg tart.
+                        </p>
+
+                        <div class="dessert-combo-includes">
+                            <span><i class="fa-solid fa-check"></i> 1 Mango Pudding</span>
+                            <span><i class="fa-solid fa-check"></i> 1 Chinese Egg Tart</span>
+                        </div>
+
+                        <div class="dessert-combo-price">
+                            <div>
+                                <span class="dessert-combo-price-label">
+                                    COMBO PRICE
+                                </span>
+                                <strong>₹149</strong>
+                            </div>
+                        </div>
+
+                        <a href="booking.html" class="dessert-combo-button">
+                            Enjoy This Combo
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- COMBO 2 -->
+                <article class="dessert-combo-card dessert-combo-featured">
+                    <div class="dessert-combo-image">
+                        <img src="images/golden-treat-combo.jpg" alt="Golden sesame balls and Chinese dessert treats">
+
+                        <span class="dessert-combo-badge">GOLDEN FAVOURITE</span>
+                    </div>
+
+                    <div class="dessert-combo-content">
+                        <span class="dessert-combo-subtitle">
+                            CRISPY LITTLE INDULGENCES
+                        </span>
+
+                        <h3>The Golden Treat</h3>
+
+                        <p>
+                            Sesame balls paired with creamy mango
+                            pudding for a delicious contrast.
+                        </p>
+
+                        <div class="dessert-combo-includes">
+                            <span><i class="fa-solid fa-check"></i> 3 Sesame Balls</span>
+                            <span><i class="fa-solid fa-check"></i> 1 Mango Pudding</span>
+                        </div>
+
+                        <div class="dessert-combo-price">
+                            <div>
+                                <span class="dessert-combo-price-label">
+                                    COMBO PRICE
+                                </span>
+                                <strong>₹199</strong>
+                            </div>
+
+                            <span class="dessert-combo-popular">
+                                Guest Favourite
+                            </span>
+                        </div>
+
+                        <a href="booking.html" class="dessert-combo-button">
+                            Enjoy This Combo
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- COMBO 3 -->
+                <article class="dessert-combo-card">
+                    <div class="dessert-combo-image">
+                        <img src="images/dessert-sharing-platter.jpg" alt="Assorted Chinese dessert sharing platter">
+
+                        <span class="dessert-combo-badge">MADE TO SHARE</span>
+                    </div>
+
+                    <div class="dessert-combo-content">
+                        <span class="dessert-combo-subtitle">
+                            A TABLE FULL OF SWEETNESS
+                        </span>
+
+                        <h3>The Sharing Platter</h3>
+
+                        <p>
+                            An assorted selection of sweet favourites
+                            made for sharing.
+                        </p>
+
+                        <div class="dessert-combo-includes">
+                            <span><i class="fa-solid fa-check"></i> 2 Mango Puddings</span>
+                            <span><i class="fa-solid fa-check"></i> 2 Chinese Egg Tarts</span>
+                        </div>
+
+                        <div class="dessert-combo-price">
+                            <div>
+                                <span class="dessert-combo-price-label">
+                                    COMBO PRICE
+                                </span>
+                                <strong>₹349</strong>
+                            </div>
+                        </div>
+
+                        <a href="booking.html" class="dessert-combo-button">
+                            Enjoy This Combo
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="dessert-combo-note">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>
+                    Combo prices shown are sample prices. Update them to match
+                    your restaurant's actual menu and offers.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: THE PERFECT SWEET PAIRING -->
+    <section class="dessert-pairing-section">
+        <div class="dessert-pairing-container">
+
+            <div class="dessert-pairing-visual">
+                <img src="images/dessert-tea-pairing.jpg" alt="Chinese desserts served with traditional tea">
+
+                <div class="dessert-pairing-image-caption">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <span>A SWEET MOMENT OF CALM</span>
+                </div>
+            </div>
+
+            <div class="dessert-pairing-content">
+
+                <span class="dessert-pairing-label">
+                    <i class="fa-solid fa-leaf"></i>
+                    THE ART OF PAIRING
+                </span>
+
+                <h2>A Little Sweetness.<br>
+                    <span>A Perfect Sip.</span>
+                </h2>
+
+                <p class="dessert-pairing-intro">
+                    Some moments call for something sweet and a comforting
+                    cup of tea. Discover simple pairings inspired by
+                    traditional Chinese flavours, perfect for slowing down
+                    and savouring the moment.
+                </p>
+
+                <div class="dessert-pairing-list">
+
+                    <article class="dessert-pairing-item">
+                        <div class="dessert-pairing-icon">
+                            <i class="fa-solid fa-snowflake"></i>
+                        </div>
+
+                        <div class="dessert-pairing-item-content">
+                            <h3>Mango Pudding + Jasmine Tea</h3>
+                            <p>
+                                Fruity sweetness meets delicate floral notes
+                                for a refreshing finish.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="dessert-pairing-item">
+                        <div class="dessert-pairing-icon">
+                            <i class="fa-solid fa-fire"></i>
+                        </div>
+
+                        <div class="dessert-pairing-item-content">
+                            <h3>Sesame Balls + Oolong Tea</h3>
+                            <p>
+                                Golden, chewy treats paired with fragrant
+                                tea for a satisfying combination.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="dessert-pairing-item">
+                        <div class="dessert-pairing-icon">
+                            <i class="fa-solid fa-cookie-bite"></i>
+                        </div>
+
+                        <div class="dessert-pairing-item-content">
+                            <h3>Egg Tarts + Chinese Green Tea</h3>
+                            <p>
+                                Buttery pastry and smooth custard meet
+                                the clean taste of green tea.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <a href="booking.html" class="dessert-pairing-button">
+                    Make It a Sweet Visit
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: SWEET MOMENTS EDITORIAL -->
+    <section class="dessert-story-section">
+        <div class="dessert-story-container">
+
+            <div class="dessert-story-header">
+                <div class="dessert-story-heading">
+                    <span class="dessert-story-label">
+                        <i class="fa-solid fa-heart"></i>
+                        BEYOND THE LAST BITE
+                    </span>
+
+                    <h2>Some Moments<br>
+                        Are Made <span>Sweeter.</span>
+                    </h2>
+                </div>
+
+                <p class="dessert-story-intro">
+                    A shared dessert, an unexpected treat, a little reason
+                    to celebrate. At Dim Sum Street, the sweetest memories
+                    often begin with one more thing on the table.
+                </p>
+            </div>
+
+            <!-- MOMENT 01 -->
+            <div class="dessert-story-row">
+                <div class="dessert-story-number">01</div>
+
+                <div class="dessert-story-image">
+                    <img src="images/dessert-friends-gathering.jpg"
+                        alt="Friends sharing desserts over a relaxed conversation">
+                </div>
+
+                <div class="dessert-story-content">
+                    <span>FOR THE EVERYDAY CATCH-UP</span>
+
+                    <h3>One More Bite.<br>One More Story.</h3>
+
+                    <p>
+                        The conversation is too good to end. Bring out
+                        a mango pudding, pass around a few sweet treats
+                        and let the moment last a little longer.
+                    </p>
+
+                    <a href="#dessert-combos">
+                        Find Your Sweet Combo
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- MOMENT 02 -->
+            <div class="dessert-story-row dessert-story-row-reverse">
+                <div class="dessert-story-number">02</div>
+
+                <div class="dessert-story-image">
+                    <img src="images/dessert-family-time.jpg" alt="A family enjoying a selection of desserts together">
+                </div>
+
+                <div class="dessert-story-content">
+                    <span>FOR THE PEOPLE WHO MATTER</span>
+
+                    <h3>Pass the Plate.<br>Share the Happiness.</h3>
+
+                    <p>
+                        From little ones reaching for their favourites
+                        to everyone trying something new, a dessert
+                        platter makes family time even more memorable.
+                    </p>
+
+                    <a href="booking.html">
+                        Plan a Table Together
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- MOMENT 03 -->
+            <div class="dessert-story-row">
+                <div class="dessert-story-number">03</div>
+
+                <div class="dessert-story-image">
+                    <img src="images/dessert-celebration.jpg"
+                        alt="A beautifully arranged dessert selection for a celebration">
+                </div>
+
+                <div class="dessert-story-content">
+                    <span>FOR THE LITTLE CELEBRATIONS</span>
+
+                    <h3>Give Every Occasion<br>A Sweeter Ending.</h3>
+
+                    <p>
+                        Celebrate birthdays, milestones or simply
+                        being together with a table full of delicious
+                        treats and moments worth remembering.
+                    </p>
+
+                    <a href="booking.html">
+                        Reserve Your Table
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- CLOSING QUOTE -->
+            <div class="dessert-story-quote">
+                <span class="dessert-story-quote-mark">“</span>
+
+                <p>
+                    Life is sweeter when there's
+                    <span>something to share.</span>
+                </p>
+
+                <span class="dessert-story-quote-line"></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: FINAL DESSERT CTA -->
+    <section class="dessert-final-section" style="background-image: url('images/dessert-final-banner.jpg');">
+
+        <div class="dessert-final-overlay"></div>
+
+        <div class="dessert-final-container">
+
+            <span class="dessert-final-label">
+                <i class="fa-solid fa-heart"></i>
+                EVERY SWEET MOMENT COUNTS
+            </span>
+
+            <h2>
+                Leave a Little Room
+                <span>for Dessert.</span>
+            </h2>
+
+            <p>
+                From golden sesame balls to creamy mango pudding,
+                make your next visit a little sweeter with our
+                irresistible desserts and sharing combos.
+            </p>
+
+            <div class="dessert-final-actions">
+                <a href="booking.html" class="dessert-final-primary-btn">
+                    Plan Your Visit
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#dessert-combos" class="dessert-final-secondary-btn">
+                    Explore Dessert Combos
+                </a>
+            </div>
+
+            <div class="dessert-final-bottom">
+                <span></span>
+                <p>Good Food. Sweet Moments. Happy Memories.</p>
+                <span></span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================
+     FOOTER
+========================= -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+            <div class="footer-container">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="Dim Sum Street">
+                    </a>
+
+                    <p class="footer-description">
+                        Traditional dim sum, handcrafted baskets, and
+                        warm dining moments made to bring everyone together.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="weekend-brunch.html">
+                                Weekend Brunch
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="locations.html">Locations</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Our Menu -->
+                <div class="footer-column">
+
+                    <h3>Our Menu</h3>
+
+                    <ul>
+                        <li>
+                            <a href="steamed-dim-sum.html">
+                                Steamed Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="fried-dim-sum.html">
+                                Fried Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="signature-baskets.html">
+                                Signature Baskets
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="desserts.html">
+                                Desserts
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h3>Visit Us</h3>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <p>
+                            24 Bamboo Street,<br>
+                            Chinatown, Chennai
+                        </p>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <a href="mailto:hello@dimsumstreet.com">
+                            hello@dimsumstreet.com
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <p>
+                            Mon – Sun: 10:30 AM – 10:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-container">
+
+                <p>
+                    © 2026 Dim Sum Street. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <span>|</span>
+
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

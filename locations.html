@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dim Sum Street</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Noto+Serif+SC:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+     HEADER
+========================= -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="Dim Sum Street">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+
+                    <!-- Home Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span class="nav-text">About</span></a>
+                    </li>
+
+                    <!-- Menu Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">Steamed Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="fried-dim-sum.html">Fried Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="signature-baskets.html">Signature Baskets</a>
+                            </li>
+                            <li>
+                                <a href="desserts.html">Desserts</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="nav-item">
+                        <a href="weekend-brunch.html" class="nav-link">
+                            <span class="nav-text">Weekend Brunch</span>
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="nav-item">
+                        <a href="locations.html" class="nav-link">
+                            <span class="nav-text">Locations</span>
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Desktop Header Actions -->
+            <div class="header-actions">
+
+                <!-- Dark Mode -->
+                <button class="header-toggle theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button class="header-toggle rtl-toggle" id="rtlToggle" type="button" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </button>
+
+                <!-- Login -->
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve Table -->
+                <a href="booking.html" class="reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+
+                    <!-- Home -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="mobile-nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <!-- Menu -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">
+                                    Steamed Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fried-dim-sum.html">
+                                    Fried Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="signature-baskets.html">
+                                    Signature Baskets
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="desserts.html">
+                                    Desserts
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="mobile-nav-item">
+                        <a href="weekend-brunch.html">
+                            Weekend Brunch
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="mobile-nav-item">
+                        <a href="locations.html">
+                            Locations
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="mobile-nav-item">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Mobile Actions -->
+            <div class="mobile-actions">
+
+                <div class="mobile-action-row">
+
+                    <!-- Dark Mode -->
+                    <button class="mobile-action-btn" id="mobileThemeToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-moon"></i>
+                            Dark Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- RTL -->
+                    <button class="mobile-action-btn" id="mobileRtlToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            RTL Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Login -->
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve -->
+                <a href="booking.html" class="mobile-reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="page-hero about-page-hero" style="background-image: url('images/locations-hero.jpg');">
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="page-hero-container">
+
+            <div class="page-hero-content">
+
+                <span class="page-hero-label">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    OUR LOCATIONS
+                </span>
+
+                <h1>
+                    Find Your
+                    <span>Dim Sum Street.</span>
+                </h1>
+
+                <p>
+                    Discover our warm dining spaces, traditional flavours
+                    and handcrafted dim sum across the city.
+
+                </p>
+
+                <div class="page-hero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Locations</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     LOCATIONS — OUR LOCATIONS
+========================================= -->
+
+    <section class="locations-list-section">
+
+        <div class="locations-list-container">
+
+            <!-- Section Heading -->
+            <div class="locations-list-heading">
+
+                <span class="locations-list-label">
+                    OUR LOCATIONS
+                </span>
+
+                <h2>Find Us Near You</h2>
+
+                <p>
+                    Step into your nearest Dim Sum Street for handcrafted
+                    baskets, fragrant tea and a table made for sharing.
+                </p>
+
+            </div>
+
+
+            <!-- Location Cards -->
+            <div class="locations-list-grid">
+
+
+                <!-- Location 01 -->
+                <article class="location-card">
+
+                    <div class="location-card-image">
+
+                        <img src="images/location-chinatown.jpg" alt="Dim Sum Street Chinatown">
+
+                        <span class="location-card-number">
+                            01
+                        </span>
+
+                    </div>
+
+                    <div class="location-card-content">
+
+                        <span class="location-card-type">
+                            FLAGSHIP RESTAURANT
+                        </span>
+
+                        <h3>Chinatown</h3>
+
+                        <p class="location-card-address">
+                            18 Lantern Street,<br>
+                            Chinatown, City 600001
+                        </p>
+
+                        <div class="location-card-details">
+
+                            <div class="location-card-detail">
+                                <i class="fa-regular fa-clock"></i>
+
+                                <div>
+                                    <span>OPEN DAILY</span>
+                                    <strong>10:00 AM — 10:00 PM</strong>
+                                </div>
+                            </div>
+
+                            <div class="location-card-detail">
+                                <i class="fa-solid fa-phone"></i>
+
+                                <div>
+                                    <span>CALL US</span>
+                                    <strong>+91 98765 43210</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="location-card-button">
+                            Get Directions
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Location 02 -->
+                <article class="location-card">
+
+                    <div class="location-card-image">
+
+                        <img src="images/location-riverside.jpg" alt="Dim Sum Street Riverside">
+
+                        <span class="location-card-number">
+                            02
+                        </span>
+
+                    </div>
+
+                    <div class="location-card-content">
+
+                        <span class="location-card-type">
+                            RIVERSIDE DINING
+                        </span>
+
+                        <h3>Riverside</h3>
+
+                        <p class="location-card-address">
+                            42 Jade Avenue,<br>
+                            Riverside, City 600018
+                        </p>
+
+                        <div class="location-card-details">
+
+                            <div class="location-card-detail">
+                                <i class="fa-regular fa-clock"></i>
+
+                                <div>
+                                    <span>OPEN DAILY</span>
+                                    <strong>11:00 AM — 10:00 PM</strong>
+                                </div>
+                            </div>
+
+                            <div class="location-card-detail">
+                                <i class="fa-solid fa-phone"></i>
+
+                                <div>
+                                    <span>CALL US</span>
+                                    <strong>+91 98765 43211</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="location-card-button">
+                            Get Directions
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Location 03 -->
+                <article class="location-card">
+
+                    <div class="location-card-image">
+
+                        <img src="images/location-garden.jpg" alt="Dim Sum Street Garden">
+
+                        <span class="location-card-number">
+                            03
+                        </span>
+
+                    </div>
+
+                    <div class="location-card-content">
+
+                        <span class="location-card-type">
+                            GARDEN HOUSE
+                        </span>
+
+                        <h3>Garden House</h3>
+
+                        <p class="location-card-address">
+                            76 Golden Lane,<br>
+                            Garden District, City 600028
+                        </p>
+
+                        <div class="location-card-details">
+
+                            <div class="location-card-detail">
+                                <i class="fa-regular fa-clock"></i>
+
+                                <div>
+                                    <span>OPEN DAILY</span>
+                                    <strong>10:00 AM — 10:00 PM</strong>
+                                </div>
+                            </div>
+
+                            <div class="location-card-detail">
+                                <i class="fa-solid fa-phone"></i>
+
+                                <div>
+                                    <span>CALL US</span>
+                                    <strong>+91 98765 43212</strong>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="#" class="location-card-button">
+                            Get Directions
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     LOCATIONS — FIND US ON THE MAP
+========================================= -->
+
+    <section class="locations-map-section">
+
+        <div class="locations-map-container">
+
+            <!-- Map -->
+            <div class="locations-map">
+
+                <iframe src="https://www.google.com/maps?q=Chinatown&output=embed" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
+
+            <!-- Information -->
+            <div class="locations-map-content">
+
+                <span class="locations-map-label">
+                    FIND YOUR WAY
+                </span>
+
+                <h2>
+                    Easy To Find,
+                    <span>Easy To Love.</span>
+                </h2>
+
+                <p>
+                    Whether you are joining us for a quick dim sum lunch,
+                    a relaxed tea or a family gathering, our locations are
+                    designed to make every visit easy and welcoming.
+                </p>
+
+
+                <div class="locations-map-info">
+
+                    <!-- Address -->
+                    <div class="locations-map-info-item">
+
+                        <div class="locations-map-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <span>FLAGSHIP LOCATION</span>
+
+                            <strong>
+                                18 Lantern Street,<br>
+                                Chinatown, City 600001
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Hours -->
+                    <div class="locations-map-info-item">
+
+                        <div class="locations-map-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                        <div>
+                            <span>OPENING HOURS</span>
+
+                            <strong>
+                                Monday — Sunday<br>
+                                10:00 AM — 10:00 PM
+                            </strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Phone -->
+                    <div class="locations-map-info-item">
+
+                        <div class="locations-map-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <span>CALL OUR TEAM</span>
+
+                            <strong>
+                                +91 98765 43210
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <a href="contact.html" class="locations-map-button">
+                    Contact Us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     LOCATIONS — OPENING HOURS & DINING INFO
+========================================= -->
+
+    <section class="locations-hours-section">
+
+        <div class="locations-hours-container">
+
+            <!-- Section Heading -->
+            <div class="locations-hours-heading">
+
+                <span class="locations-hours-label">
+                    PLAN YOUR VISIT
+                </span>
+
+                <h2>
+                    Make Time For
+                    <span>Dim Sum.</span>
+                </h2>
+
+                <p>
+                    From an easy morning tea to a relaxed evening gathering,
+                    our doors are open throughout the day for good food,
+                    warm tea and shared moments.
+                </p>
+
+            </div>
+
+
+            <!-- Information Grid -->
+            <div class="locations-hours-grid">
+
+                <!-- Card 01 -->
+                <div class="locations-hours-card">
+
+                    <div class="locations-hours-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+
+                    <span class="locations-hours-number">
+                        01
+                    </span>
+
+                    <h3>Opening Hours</h3>
+
+                    <p>
+                        Monday — Sunday
+                    </p>
+
+                    <strong>
+                        10:00 AM — 10:00 PM
+                    </strong>
+
+                    <div class="locations-hours-divider"></div>
+
+                    <span class="locations-hours-note">
+                        Kitchen closes 30 minutes before closing.
+                    </span>
+
+                </div>
+
+
+                <!-- Card 02 -->
+                <div class="locations-hours-card">
+
+                    <div class="locations-hours-icon">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+
+                    <span class="locations-hours-number">
+                        02
+                    </span>
+
+                    <h3>Dim Sum Hours</h3>
+
+                    <p>
+                        Monday — Friday
+                    </p>
+
+                    <strong>
+                        10:00 AM — 5:00 PM
+                    </strong>
+
+                    <div class="locations-hours-divider"></div>
+
+                    <span class="locations-hours-note">
+                        Fresh baskets served throughout the day.
+                    </span>
+
+                </div>
+
+
+                <!-- Card 03 -->
+                <div class="locations-hours-card">
+
+                    <div class="locations-hours-icon">
+                        <i class="fa-solid fa-champagne-glasses"></i>
+                    </div>
+
+                    <span class="locations-hours-number">
+                        03
+                    </span>
+
+                    <h3>Weekend Dining</h3>
+
+                    <p>
+                        Saturday — Sunday
+                    </p>
+
+                    <strong>
+                        10:00 AM — 10:00 PM
+                    </strong>
+
+                    <div class="locations-hours-divider"></div>
+
+                    <span class="locations-hours-note">
+                        Weekend brunch and group dining available.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Bottom Note -->
+            <div class="locations-hours-bottom">
+
+                <div class="locations-hours-bottom-icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <p>
+                    Planning a special gathering?
+                    <a href="booking.html">Reserve your table</a>
+                    in advance and let our team prepare your visit.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================================
+     LOCATIONS — RESERVE YOUR TABLE
+========================================= -->
+
+    <section class="locations-reserve-section" style="background-image: url('images/locations-reserve.jpg');">
+
+        <div class="locations-reserve-overlay"></div>
+
+        <div class="locations-reserve-container">
+
+            <div class="locations-reserve-content">
+
+                <span class="locations-reserve-label">
+                    YOUR TABLE IS WAITING
+                </span>
+
+                <h2>
+                    Come For The Dim Sum.
+                    <span>Stay For The Moments.</span>
+                </h2>
+
+                <p>
+                    Choose your favourite Dim Sum Street location and
+                    reserve a table for a relaxed meal, a family gathering
+                    or an evening shared over baskets and tea.
+                </p>
+
+                <div class="locations-reserve-buttons">
+
+                    <a href="booking.html" class="locations-reserve-primary">
+                        Reserve A Table
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="contact.html" class="locations-reserve-secondary">
+                        Contact Us
+                    </a>
+
+                </div>
+
+                <div class="locations-reserve-note">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <span>
+                        Three locations · Warm tables · Traditional dim sum
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     FOOTER
+========================= -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+            <div class="footer-container">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="Dim Sum Street">
+                    </a>
+
+                    <p class="footer-description">
+                        Traditional dim sum, handcrafted baskets, and
+                        warm dining moments made to bring everyone together.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="weekend-brunch.html">
+                                Weekend Brunch
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="locations.html">Locations</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Our Menu -->
+                <div class="footer-column">
+
+                    <h3>Our Menu</h3>
+
+                    <ul>
+                        <li>
+                            <a href="steamed-dim-sum.html">
+                                Steamed Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="fried-dim-sum.html">
+                                Fried Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="signature-baskets.html">
+                                Signature Baskets
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="desserts.html">
+                                Desserts
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h3>Visit Us</h3>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <p>
+                            24 Bamboo Street,<br>
+                            Chinatown, Chennai
+                        </p>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <a href="mailto:hello@dimsumstreet.com">
+                            hello@dimsumstreet.com
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <p>
+                            Mon – Sun: 10:30 AM – 10:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-container">
+
+                <p>
+                    © 2026 Dim Sum Street. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <span>|</span>
+
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

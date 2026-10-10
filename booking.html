@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dim Sum Street</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Noto+Serif+SC:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         RESERVATION TOP BAR
+    ========================================= -->
+
+    <header class="reserve-topbar">
+
+        <div class="reserve-topbar-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="reserve-logo">
+                <img src="images/logo.png" alt="Dim Sum Street">
+            </a>
+
+
+            <!-- Actions -->
+            <div class="reserve-actions">
+
+                <!-- Dark Mode -->
+                <button type="button" class="reserve-toggle" id="themeToggle" aria-label="Toggle dark mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- RTL -->
+                <button type="button" class="reserve-toggle" id="rtlToggle" aria-label="Toggle RTL">
+
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         RESERVATION PAGE
+    ========================================= -->
+
+    <main class="reserve-page">
+
+        <div class="reserve-container">
+
+            <!-- Intro -->
+            <div class="reserve-intro">
+
+                <span class="reserve-label">
+                    RESERVE YOUR TABLE
+                </span>
+
+                <h1>
+                    Your Table Is
+                    <span>Waiting.</span>
+                </h1>
+
+                <p>
+                    Choose your preferred date, time and party size.
+                    We look forward to welcoming you to Dim Sum Street.
+                </p>
+
+            </div>
+
+
+            <!-- Reservation Form -->
+            <div class="reserve-form-wrapper">
+
+                <form class="reserve-form" id="reservationForm">
+
+                    <!-- Name + Phone -->
+                    <div class="reserve-form-row">
+
+                        <div class="reserve-field">
+
+                            <label for="guestName">
+                                Your Name
+                            </label>
+
+                            <input type="text" id="guestName" name="guestName" placeholder="Enter your name" required>
+
+                        </div>
+
+
+                        <div class="reserve-field">
+
+                            <label for="guestPhone">
+                                Phone Number
+                            </label>
+
+                            <input type="tel" id="guestPhone" name="guestPhone" placeholder="Enter your phone number"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email + Guests -->
+                    <div class="reserve-form-row">
+
+                        <div class="reserve-field">
+
+                            <label for="guestEmail">
+                                Email Address
+                            </label>
+
+                            <input type="email" id="guestEmail" name="guestEmail" placeholder="Enter your email"
+                                required>
+
+                        </div>
+
+
+                        <div class="reserve-field">
+
+                            <label for="guestCount">
+                                Number Of Guests
+                            </label>
+
+                            <select id="guestCount" name="guestCount" required>
+
+                                <option value="">
+                                    Select guests
+                                </option>
+
+                                <option value="1">
+                                    1 Guest
+                                </option>
+
+                                <option value="2">
+                                    2 Guests
+                                </option>
+
+                                <option value="3">
+                                    3 Guests
+                                </option>
+
+                                <option value="4">
+                                    4 Guests
+                                </option>
+
+                                <option value="5">
+                                    5 Guests
+                                </option>
+
+                                <option value="6">
+                                    6 Guests
+                                </option>
+
+                                <option value="7">
+                                    7 Guests
+                                </option>
+
+                                <option value="8">
+                                    8 Guests
+                                </option>
+
+                                <option value="9">
+                                    9 Guests
+                                </option>
+
+                                <option value="10+">
+                                    10+ Guests
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Date + Time -->
+                    <div class="reserve-form-row">
+
+                        <div class="reserve-field">
+
+                            <label for="reserveDate">
+                                Date
+                            </label>
+
+                            <div class="reserve-input-icon">
+
+                                <input type="date" id="reserveDate" name="reserveDate" required>
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="reserve-field">
+
+                            <label for="reserveTime">
+                                Preferred Time
+                            </label>
+
+                            <select id="reserveTime" name="reserveTime" required>
+
+                                <option value="">
+                                    Select time
+                                </option>
+
+                                <option value="10:00 AM">
+                                    10:00 AM
+                                </option>
+
+                                <option value="11:00 AM">
+                                    11:00 AM
+                                </option>
+
+                                <option value="12:00 PM">
+                                    12:00 PM
+                                </option>
+
+                                <option value="1:00 PM">
+                                    1:00 PM
+                                </option>
+
+                                <option value="2:00 PM">
+                                    2:00 PM
+                                </option>
+
+                                <option value="5:00 PM">
+                                    5:00 PM
+                                </option>
+
+                                <option value="6:00 PM">
+                                    6:00 PM
+                                </option>
+
+                                <option value="7:00 PM">
+                                    7:00 PM
+                                </option>
+
+                                <option value="8:00 PM">
+                                    8:00 PM
+                                </option>
+
+                                <option value="9:00 PM">
+                                    9:00 PM
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Location -->
+                    <div class="reserve-field">
+
+                        <label for="reserveLocation">
+                            Preferred Location
+                        </label>
+
+                        <select id="reserveLocation" name="reserveLocation" required>
+
+                            <option value="">
+                                Select a location
+                            </option>
+
+                            <option value="Chinatown">
+                                Chinatown
+                            </option>
+
+                            <option value="Riverside">
+                                Riverside
+                            </option>
+
+                            <option value="Garden House">
+                                Garden House
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Special Request -->
+                    <div class="reserve-field">
+
+                        <label for="specialRequest">
+                            Special Request
+                            <span>(Optional)</span>
+                        </label>
+
+                        <textarea id="specialRequest" name="specialRequest" rows="4"
+                            placeholder="Birthday, celebration, seating preference or any special request..."></textarea>
+
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button type="submit" class="reserve-submit">
+
+                        Reserve My Table
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <!-- Note -->
+                    <p class="reserve-form-note">
+
+                        <i class="fa-solid fa-circle-info"></i>
+
+                        Reservation requests are subject to availability.
+                        Our team will confirm your table shortly.
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

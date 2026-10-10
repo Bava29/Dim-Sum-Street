@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dim Sum Street</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Noto+Serif+SC:wght@600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+     HEADER
+========================= -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="site-logo">
+                <img src="images/logo.png" alt="Dim Sum Street">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-menu">
+
+                    <!-- Home Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link"><span class="nav-text">About</span></a>
+                    </li>
+
+                    <!-- Menu Dropdown -->
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link">
+                            <span class="nav-text">Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">Steamed Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="fried-dim-sum.html">Fried Dim Sum</a>
+                            </li>
+                            <li>
+                                <a href="signature-baskets.html">Signature Baskets</a>
+                            </li>
+                            <li>
+                                <a href="desserts.html">Desserts</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="nav-item">
+                        <a href="weekend-brunch.html" class="nav-link">
+                            <span class="nav-text">Weekend Brunch</span>
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="nav-item">
+                        <a href="locations.html" class="nav-link">
+                            <span class="nav-text">Locations</span>
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <span class="nav-text">Contact</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Desktop Header Actions -->
+            <div class="header-actions">
+
+                <!-- Dark Mode -->
+                <button class="header-toggle theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <!-- RTL -->
+                <button class="header-toggle rtl-toggle" id="rtlToggle" type="button" aria-label="Toggle RTL mode">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </button>
+
+                <!-- Login -->
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve Table -->
+                <a href="booking.html" class="reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+        <div class="mobile-menu" id="mobileMenu">
+
+            <nav class="mobile-navigation">
+                <ul class="mobile-nav-list">
+
+                    <!-- Home -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Home</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="index.html">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="home-2.html">Home 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- About -->
+                    <li class="mobile-nav-item">
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <!-- Menu -->
+                    <li class="mobile-nav-item mobile-dropdown">
+                        <button class="mobile-dropdown-btn" type="button">
+                            <span>Menu</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="mobile-dropdown-menu">
+                            <li>
+                                <a href="steamed-dim-sum.html">
+                                    Steamed Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fried-dim-sum.html">
+                                    Fried Dim Sum
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="signature-baskets.html">
+                                    Signature Baskets
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="desserts.html">
+                                    Desserts
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Weekend Brunch -->
+                    <li class="mobile-nav-item">
+                        <a href="weekend-brunch.html">
+                            Weekend Brunch
+                        </a>
+                    </li>
+
+                    <!-- Locations -->
+                    <li class="mobile-nav-item">
+                        <a href="locations.html">
+                            Locations
+                        </a>
+                    </li>
+
+                    <!-- Contact -->
+                    <li class="mobile-nav-item">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <!-- Mobile Actions -->
+            <div class="mobile-actions">
+
+                <div class="mobile-action-row">
+
+                    <!-- Dark Mode -->
+                    <button class="mobile-action-btn" id="mobileThemeToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-moon"></i>
+                            Dark Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- RTL -->
+                    <button class="mobile-action-btn" id="mobileRtlToggle" type="button">
+                        <span>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                            RTL Mode
+                        </span>
+
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Login -->
+                <a href="login.html" class="mobile-login-btn">
+                    Login
+                </a>
+
+                <!-- Reserve -->
+                <a href="booking.html" class="mobile-reserve-btn">
+                    Reserve a Table
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="page-hero about-page-hero" style="background-image: url('images/wb-hero.jpg');">
+
+        <div class="page-hero-overlay"></div>
+
+        <div class="page-hero-container">
+
+            <div class="page-hero-content">
+
+                <span class="page-hero-label">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    WEEKEND BRUNCH
+                </span>
+
+                <h1>
+                    Slow Mornings.
+                    <span>Beautiful Baskets.</span>
+                </h1>
+
+                <p>
+                    Make your weekends special with handcrafted dim sum, freshly brewed tea and a table full of
+                    favourites to share with the people you love.
+                </p>
+
+                <div class="page-hero-breadcrumb">
+                    <a href="index.html">Home</a>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <span>Weekend Brunch</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================
+     WEEKEND BRUNCH — SECTION 2
+     THE BRUNCH EXPERIENCE
+========================================= -->
+
+    <section class="brunch-experience-section" id="brunch-experience">
+
+        <div class="brunch-experience-container">
+
+            <!-- Section Heading -->
+            <div class="brunch-experience-heading">
+
+                <span class="brunch-experience-label">
+                    YOUR WEEKEND, SERVED BEAUTIFULLY
+                </span>
+
+                <h2>
+                    A Brunch Worth
+                    <span>Slowing Down For.</span>
+                </h2>
+
+                <p>
+                    Take your time, discover new flavours and enjoy
+                    the little moments that make a weekend memorable.
+                </p>
+
+            </div>
+
+
+            <!-- Experience Cards -->
+            <div class="brunch-experience-grid">
+
+                <!-- Card 1 -->
+                <article class="brunch-experience-card">
+
+                    <div class="brunch-experience-image">
+                        <img src="images/brunch-steamed-baskets.jpg" alt="Freshly steamed dim sum baskets">
+                        <span class="brunch-experience-number">01</span>
+                    </div>
+
+                    <div class="brunch-experience-content">
+
+                        <div class="brunch-experience-icon">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </div>
+
+                        <h3>Freshly Steamed</h3>
+
+                        <p>
+                            Discover delicate dumplings, fluffy buns
+                            and handcrafted favourites served warm
+                            from the steamer.
+                        </p>
+
+                        <a href="steamed-dim-sum.html">
+                            Explore Steamed Dim Sum
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 2 -->
+                <article class="brunch-experience-card">
+
+                    <div class="brunch-experience-image">
+                        <img src="images/brunch-favourites.jpg" alt="Crispy Chinese dim sum and golden dumplings">
+                        <span class="brunch-experience-number">02</span>
+                    </div>
+
+                    <div class="brunch-experience-content">
+
+                        <div class="brunch-experience-icon">
+                            <i class="fa-solid fa-fire-burner"></i>
+                        </div>
+
+                        <h3>Golden Favourites</h3>
+
+                        <p>
+                            Add a little crunch to your brunch with
+                            golden dumplings, crispy bites and
+                            satisfying savoury treats.
+                        </p>
+
+                        <a href="fried-dim-sum.html">
+                            Explore Fried Dim Sum
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 3 -->
+                <article class="brunch-experience-card">
+
+                    <div class="brunch-experience-image">
+                        <img src="images/brunch-chinese-tea.jpg" alt="Traditional Chinese tea served with dim sum">
+                        <span class="brunch-experience-number">03</span>
+                    </div>
+
+                    <div class="brunch-experience-content">
+
+                        <div class="brunch-experience-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+
+                        <h3>Tea & Take Your Time</h3>
+
+                        <p>
+                            Pair your most favourite baskets with fragrant
+                            Chinese tea and enjoy a
+                            more relaxed weekend morning.
+                        </p>
+
+                        <a href="steamed-dim-sum.html">
+                            Discover Our Menu
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Card 4 -->
+                <article class="brunch-experience-card">
+
+                    <div class="brunch-experience-image">
+                        <img src="images/brunch-sharing-table.jpg"
+                            alt="Friends and family sharing a Chinese brunch table">
+                        <span class="brunch-experience-number">04</span>
+                    </div>
+
+                    <div class="brunch-experience-content">
+
+                        <div class="brunch-experience-icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <h3>Made For Sharing</h3>
+
+                        <p>
+                            Bring your family or friends together
+                            around a table filled with little dishes
+                            and plenty of moments to share.
+                        </p>
+
+                        <a href="booking.html">
+                            Plan Your Brunch
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Bottom Information -->
+            <div class="brunch-experience-note">
+
+                <div class="brunch-experience-note-icon">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </div>
+
+                <p>
+                    Planning a weekend visit?
+                    <strong>Reserve your table in advance</strong>
+                    for a relaxed brunch with your favourite people.
+                </p>
+
+                <a href="booking.html" class="brunch-experience-book">
+                    Book A Table
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION 3: BRUNCH MENU & SIGNATURE DISHES -->
+    <section class="brunch-menu-section" id="brunch-menu">
+        <div class="brunch-menu-container">
+
+            <div class="brunch-menu-heading">
+                <span class="brunch-menu-eyebrow">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    FROM OUR BRUNCH KITCHEN
+                </span>
+
+                <h2>Brunch Worth <span>Waking Up For.</span></h2>
+
+                <p>
+                    From delicate steamed dumplings to golden crispy bites,
+                    discover the favourites that make every weekend table special.
+                </p>
+            </div>
+
+            <div class="brunch-menu-grid">
+
+                <!-- Dish 1 -->
+                <article class="brunch-menu-card">
+                    <div class="brunch-menu-image">
+                        <img src="images/brunch-har-gow.jpg" alt="Steamed shrimp har gow dumplings">
+                        <span class="brunch-menu-tag">STEAMED FAVOURITE</span>
+                    </div>
+
+                    <div class="brunch-menu-card-content">
+                        <div class="brunch-menu-card-top">
+                            <span class="brunch-menu-category">DIM SUM</span>
+                            <span class="brunch-menu-price">₹249</span>
+                        </div>
+
+                        <h3>Crystal Shrimp Har Gow</h3>
+
+                        <p>
+                            Delicate translucent dumplings filled with juicy
+                            shrimp and served fresh from the steamer.
+                        </p>
+
+                        <div class="brunch-menu-card-footer">
+                            <span>
+                                <i class="fa-solid fa-fire"></i>
+                                Steamed Fresh
+                            </span>
+                            <a href="#" aria-label="Explore steamed menu">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Dish 2 -->
+                <article class="brunch-menu-card">
+                    <div class="brunch-menu-image">
+                        <img src="images/brunch-siu-mai.jpg" alt="Traditional pork and shrimp siu mai">
+                        <span class="brunch-menu-tag">HOUSE SPECIAL</span>
+                    </div>
+
+                    <div class="brunch-menu-card-content">
+                        <div class="brunch-menu-card-top">
+                            <span class="brunch-menu-category">DIM SUM</span>
+                            <span class="brunch-menu-price">₹229</span>
+                        </div>
+
+                        <h3>Classic Siu Mai</h3>
+
+                        <p>
+                            Open-top dumplings packed with a savour filling,
+                            finished with a traditional flavour touch.
+                        </p>
+
+                        <div class="brunch-menu-card-footer">
+                            <span>
+                                <i class="fa-solid fa-fire"></i>
+                                Steamed Fresh
+                            </span>
+                            <a href="#" aria-label="Explore steamed menu">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Dish 3 -->
+                <article class="brunch-menu-card">
+                    <div class="brunch-menu-image">
+                        <img src="images/brunch-bao-buns.jpg" alt="Soft fluffy Chinese bao buns">
+                        <span class="brunch-menu-tag">WEEKEND PICK</span>
+                    </div>
+
+                    <div class="brunch-menu-card-content">
+                        <div class="brunch-menu-card-top">
+                            <span class="brunch-menu-category">BAO BUNS</span>
+                            <span class="brunch-menu-price">₹199</span>
+                        </div>
+
+                        <h3>Soft Bao Buns</h3>
+
+                        <p>
+                            Pillowy steamed buns with a flavourful filling,
+                            perfect for a relaxed weekend brunch.
+                        </p>
+
+                        <div class="brunch-menu-card-footer">
+                            <span>
+                                <i class="fa-solid fa-utensils"></i>
+                                Soft & Fluffy
+                            </span>
+                            <a href="#" aria-label="Explore bao bun menu">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Dish 4 -->
+                <article class="brunch-menu-card">
+                    <div class="brunch-menu-image">
+                        <img src="images/brunch-spring-rolls.jpg" alt="Golden crispy vegetable spring rolls">
+                        <span class="brunch-menu-tag">CRISPY FAVOURITE</span>
+                    </div>
+
+                    <div class="brunch-menu-card-content">
+                        <div class="brunch-menu-card-top">
+                            <span class="brunch-menu-category">CRISPY BITES</span>
+                            <span class="brunch-menu-price">₹179</span>
+                        </div>
+
+                        <h3>Golden Spring Rolls</h3>
+
+                        <p>
+                            Crisp golden rolls with a delicious vegetable
+                            filling, served with our signature dipping sauce.
+                        </p>
+
+                        <div class="brunch-menu-card-footer">
+                            <span>
+                                <i class="fa-solid fa-fire-burner"></i>
+                                Golden & Crispy
+                            </span>
+                            <a href="#" aria-label="Explore crispy menu">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Dish 5 -->
+                <article class="brunch-menu-card">
+                    <div class="brunch-menu-image">
+                        <img src="images/brunch-chicken-dumplings.jpg" alt="Pan-fried chicken dumplings">
+                        <span class="brunch-menu-tag">GUEST FAVOURITE</span>
+                    </div>
+
+                    <div class="brunch-menu-card-content">
+                        <div class="brunch-menu-card-top">
+                            <span class="brunch-menu-category">PAN-FRIED</span>
+                            <span class="brunch-menu-price">₹239</span>
+                        </div>
+
+                        <h3>Chicken Potstickers</h3>
+
+                        <p>
+                            Tender dumplings with a golden pan-fried base
+                            and a savoury filling in every bite.
+                        </p>
+
+                        <div class="brunch-menu-card-footer">
+                            <span>
+                                <i class="fa-solid fa-fire-burner"></i>
+                                Pan-Fried
+                            </span>
+                            <a href="#" aria-label="Explore pan-fried menu">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Dish 6 -->
+                <article class="brunch-menu-card">
+                    <div class="brunch-menu-image">
+                        <img src="images/brunch-chinese-tea-2.jpg" alt="Chinese tea served in a traditional teapot">
+                        <span class="brunch-menu-tag">PERFECT PAIRING</span>
+                    </div>
+
+                    <div class="brunch-menu-card-content">
+                        <div class="brunch-menu-card-top">
+                            <span class="brunch-menu-category">TEA & DRINKS</span>
+                            <span class="brunch-menu-price">₹129</span>
+                        </div>
+
+                        <h3>Traditional Chinese Tea</h3>
+
+                        <p>
+                            A comforting pot of fragrant tea to complement
+                            your dumplings and brunch bites.
+                        </p>
+
+                        <div class="brunch-menu-card-footer">
+                            <span>
+                                <i class="fa-solid fa-mug-hot"></i>
+                                Freshly Brewed
+                            </span>
+                            <a href="#" aria-label="Explore drinks menu">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="brunch-menu-bottom">
+                <p>
+                    <i class="fa-solid fa-circle-info"></i>
+                    Menu availability and prices may vary by location.
+                </p>
+
+                <a href="steamed-dim-sum.html" class="brunch-menu-view-btn">
+                    Explore Full Menu
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: BRUNCH PACKAGES -->
+    <section class="brunch-packages-section" id="brunch-packages">
+        <div class="brunch-packages-container">
+
+            <div class="brunch-packages-heading">
+                <span class="brunch-packages-eyebrow">
+                    <i class="fa-solid fa-gift"></i>
+                    YOUR WEEKEND, YOUR WAY
+                </span>
+
+                <h2>Choose Your <span>Brunch Experience.</span></h2>
+
+                <p>
+                    Whether it's a relaxed morning for two or a lively table
+                    with friends, there's a brunch experience for every occasion.
+                </p>
+            </div>
+
+            <div class="brunch-packages-grid">
+
+                <!-- PACKAGE 1 -->
+                <article class="brunch-package-card">
+                    <div class="brunch-package-icon">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+
+                    <span class="brunch-package-label">A LITTLE INDULGENCE</span>
+
+                    <h3>Dim Sum Duo</h3>
+
+                    <p class="brunch-package-description">
+                        A relaxed brunch for two, with comforting favourites
+                        and a pot of freshly brewed tea.
+                    </p>
+
+                    <div class="brunch-package-price">
+                        <span class="brunch-package-currency">₹</span>
+                        <span class="brunch-package-amount">599</span>
+                        <span class="brunch-package-per">/ for two</span>
+                    </div>
+
+                    <div class="brunch-package-divider"></div>
+
+                    <h4>What's Included</h4>
+
+                    <ul class="brunch-package-features">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            2 servings of signature dumplings
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            1 portion of crispy bites
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            1 pot of Chinese tea
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Signature dipping sauces
+                        </li>
+                    </ul>
+
+                    <a href="booking.html" class="brunch-package-btn">
+                        Book This Experience
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <!-- PACKAGE 2 -->
+                <article class="brunch-package-card brunch-package-featured">
+
+                    <div class="brunch-package-popular">
+                        <i class="fa-solid fa-star"></i>
+                        MOST POPULAR
+                    </div>
+
+                    <div class="brunch-package-icon">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+
+                    <span class="brunch-package-label">THE FULL EXPERIENCE</span>
+
+                    <h3>Weekend Feast</h3>
+
+                    <p class="brunch-package-description">
+                        A generous spread of steamed, crispy and comforting
+                        bites made for a weekend treat.
+                    </p>
+
+                    <div class="brunch-package-price">
+                        <span class="brunch-package-currency">₹</span>
+                        <span class="brunch-package-amount">999</span>
+                        <span class="brunch-package-per">/ for two</span>
+                    </div>
+
+                    <div class="brunch-package-divider"></div>
+
+                    <h4>What's Included</h4>
+
+                    <ul class="brunch-package-features">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            3 servings of signature dumplings
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            2 portions of crispy favourites
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            2 bao buns
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            2 servings of Chinese tea
+                        </li>
+                    </ul>
+
+                    <a href="booking.html" class="brunch-package-btn">
+                        Book This Experience
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <!-- PACKAGE 3 -->
+                <article class="brunch-package-card">
+                    <div class="brunch-package-icon">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+
+                    <span class="brunch-package-label">BETTER TOGETHER</span>
+
+                    <h3>Gathering Table</h3>
+
+                    <p class="brunch-package-description">
+                        Bring your favourite people together over a generous
+                        selection of dishes for sharing.
+                    </p>
+
+                    <div class="brunch-package-price">
+                        <span class="brunch-package-currency">₹</span>
+                        <span class="brunch-package-amount">1,799</span>
+                        <span class="brunch-package-per">/ for four</span>
+                    </div>
+
+                    <div class="brunch-package-divider"></div>
+
+                    <h4>What's Included</h4>
+
+                    <ul class="brunch-package-features">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            5 servings of signature dumplings
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            3 portions of crispy favourites
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            4 bao buns
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            1 pot of Chinese tea
+                        </li>
+                    </ul>
+
+                    <a href="booking.html" class="brunch-package-btn">
+                        Book This Experience
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </article>
+
+            </div>
+
+            <div class="brunch-packages-note">
+                <i class="fa-solid fa-circle-info"></i>
+                <p>
+                    Package prices and dish selections are illustrative.
+                    Please confirm availability and final pricing with the restaurant.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 5: PLAN YOUR VISIT -->
+    <section class="brunch-visit-section" id="brunch-visit">
+        <div class="brunch-visit-container">
+
+            <!-- Section Heading -->
+            <div class="brunch-visit-heading">
+                <span class="brunch-visit-eyebrow">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    MAKE A MORNING OF IT
+                </span>
+
+                <h2>Plan Your <span>Perfect Brunch.</span></h2>
+
+                <p>
+                    A little planning makes your weekend gathering even better.
+                    Find the details you need before joining us at the table.
+                </p>
+            </div>
+
+            <div class="brunch-visit-layout">
+
+                <!-- LEFT: VISIT INFORMATION -->
+                <div class="brunch-visit-info">
+
+                    <!-- Timing Card -->
+                    <article class="brunch-visit-card">
+                        <div class="brunch-visit-card-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                        <div class="brunch-visit-card-content">
+                            <span class="brunch-visit-card-label">
+                                WEEKEND HOURS
+                            </span>
+
+                            <h3>Slow Mornings Start Here</h3>
+
+                            <p>
+                                Join us for a relaxed weekend brunch with
+                                freshly prepared dim sum and traditional tea.
+                            </p>
+
+                            <div class="brunch-visit-detail">
+                                <span>Saturday & Sunday</span>
+                                <strong>10:00 AM – 2:00 PM</strong>
+                            </div>
+
+                            <div class="brunch-visit-detail">
+                                <span>Weekday Dining</span>
+                                <strong>Check Restaurant Hours</strong>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Location Card -->
+                    <article class="brunch-visit-card">
+                        <div class="brunch-visit-card-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div class="brunch-visit-card-content">
+                            <span class="brunch-visit-card-label">
+                                FIND YOUR TABLE
+                            </span>
+
+                            <h3>Visit Dim Sum Street</h3>
+
+                            <p>
+                                Come together over bamboo steamers, shared
+                                plates and the comforting flavours of dim sum.
+                            </p>
+
+                            <div class="brunch-visit-detail">
+                                <span>Restaurant Location</span>
+                                <strong>See Our Locations</strong>
+                            </div>
+
+                            <a href="locations.html" class="brunch-visit-text-link">
+                                Explore Our Locations
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Dining Tips -->
+                    <div class="brunch-visit-tips">
+                        <div class="brunch-visit-tips-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+
+                        <div>
+                            <h4>A Few Helpful Tips</h4>
+                            <p>
+                                Reserve ahead for groups, mention dietary
+                                requirements when booking, and let us know
+                                if you need any special seating arrangements.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: FAQ -->
+                <div class="brunch-visit-faq">
+
+                    <div class="brunch-visit-faq-heading">
+                        <span>GOOD TO KNOW</span>
+                        <h3>Your Brunch Questions, Answered.</h3>
+                    </div>
+
+                    <div class="brunch-faq-list">
+
+                        <details class="brunch-faq-item">
+                            <summary>
+                                Do I need to reserve a table?
+                                <span class="brunch-faq-icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                            </summary>
+
+                            <div class="brunch-faq-answer">
+                                <p>
+                                    We recommend reserving ahead, especially
+                                    for weekend brunch and larger groups.
+                                    Use our booking page to request your table.
+                                </p>
+                            </div>
+                        </details>
+
+                        <details class="brunch-faq-item">
+                            <summary>
+                                Can I visit with a group?
+                                <span class="brunch-faq-icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                            </summary>
+
+                            <div class="brunch-faq-answer">
+                                <p>
+                                    Absolutely! Our sharing-style brunch is
+                                    ideal for friends and family. Please include
+                                    your group size when making a reservation.
+                                </p>
+                            </div>
+                        </details>
+
+                        <details class="brunch-faq-item">
+                            <summary>
+                                Are vegetarian options available?
+                                <span class="brunch-faq-icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                            </summary>
+
+                            <div class="brunch-faq-answer">
+                                <p>
+                                    Vegetarian choices can be requested.
+                                    Please check the current menu and mention
+                                    any dietary requirements when booking.
+                                </p>
+                            </div>
+                        </details>
+
+                        <details class="brunch-faq-item">
+                            <summary>
+                                Can I request a special occasion table?
+                                <span class="brunch-faq-icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                            </summary>
+
+                            <div class="brunch-faq-answer">
+                                <p>
+                                    Let our team know about birthdays,
+                                    celebrations or seating preferences when
+                                    you submit your reservation request.
+                                </p>
+                            </div>
+                        </details>
+
+                        <details class="brunch-faq-item">
+                            <summary>
+                                What if I arrive late?
+                                <span class="brunch-faq-icon">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                            </summary>
+
+                            <div class="brunch-faq-answer">
+                                <p>
+                                    If you expect to be late, contact the
+                                    restaurant as soon as possible. Table
+                                    availability may depend on the day's bookings.
+                                </p>
+                            </div>
+                        </details>
+
+                    </div>
+
+                    <div class="brunch-visit-help">
+                        <i class="fa-regular fa-comments"></i>
+
+                        <div>
+                            <h4>Need More Information?</h4>
+                            <p>We're happy to help you plan your visit.</p>
+                        </div>
+
+                        <a href="contact.html" aria-label="Contact Dim Sum Street">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 6: RESERVE YOUR BRUNCH -->
+    <section class="brunch-reserve-section" id="brunch-reserve">
+
+        <div class="brunch-reserve-container">
+
+            <!-- Background Decoration -->
+            <div class="brunch-reserve-decoration brunch-reserve-decoration-one"></div>
+            <div class="brunch-reserve-decoration brunch-reserve-decoration-two"></div>
+
+            <div class="brunch-reserve-content">
+
+                <span class="brunch-reserve-eyebrow">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    YOUR WEEKEND TABLE AWAITS
+                </span>
+
+                <h2>
+                    Good Food.
+                    <span>Great Company.</span>
+                    Slow Weekends.
+                </h2>
+
+                <p>
+                    Gather your favourite people and make room for one more
+                    basket. Your perfect dim sum brunch is just a reservation away.
+                </p>
+
+                <div class="brunch-reserve-highlights">
+
+                    <div class="brunch-reserve-highlight">
+                        <span class="brunch-reserve-highlight-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </span>
+
+                        <div>
+                            <strong>Weekend Brunch</strong>
+                            <span>Saturday & Sunday</span>
+                        </div>
+                    </div>
+
+                    <div class="brunch-reserve-highlight">
+                        <span class="brunch-reserve-highlight-icon">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </span>
+
+                        <div>
+                            <strong>Made For Sharing</strong>
+                            <span>Bring your favourite people</span>
+                        </div>
+                    </div>
+
+                    <div class="brunch-reserve-highlight">
+                        <span class="brunch-reserve-highlight-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </span>
+
+                        <div>
+                            <strong>Freshly Prepared</strong>
+                            <span>Dim sum and traditional tea</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="brunch-reserve-actions">
+                    <a href="booking.html" class="brunch-reserve-primary-btn">
+                        Reserve Your Table
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="steamed-dim-sum.html" class="brunch-reserve-secondary-btn">
+                        Explore Our Menu
+                        <i class="fa-solid fa-utensils"></i>
+                    </a>
+                </div>
+
+                <span class="brunch-reserve-note">
+                    <i class="fa-solid fa-heart"></i>
+                    Come hungry. Leave happy.
+                </span>
+
+            </div>
+
+            <!-- Image Side -->
+            <div class="brunch-reserve-visual">
+
+                <div class="brunch-reserve-image-frame">
+                    <img src="images/weekend-brunch-gathering.jpg"
+                        alt="A beautifully arranged dim sum brunch table with bamboo steamers and Chinese tea">
+
+                    <div class="brunch-reserve-image-overlay"></div>
+
+                    <div class="brunch-reserve-image-caption">
+                        <span>THE ART OF SHARING</span>
+                        <h3>Every Basket Brings Us Closer.</h3>
+                    </div>
+                </div>
+
+                <div class="brunch-reserve-stamp">
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <span>DIM SUM</span>
+                    <strong>WEEKENDS</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     FOOTER
+========================= -->
+    <footer class="site-footer">
+
+        <div class="footer-main">
+            <div class="footer-container">
+
+                <!-- Brand -->
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+                        <img src="images/logo.png" alt="Dim Sum Street">
+                    </a>
+
+                    <p class="footer-description">
+                        Traditional dim sum, handcrafted baskets, and
+                        warm dining moments made to bring everyone together.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a href="#" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Quick Links -->
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="weekend-brunch.html">
+                                Weekend Brunch
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="locations.html">Locations</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Our Menu -->
+                <div class="footer-column">
+
+                    <h3>Our Menu</h3>
+
+                    <ul>
+                        <li>
+                            <a href="steamed-dim-sum.html">
+                                Steamed Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="fried-dim-sum.html">
+                                Fried Dim Sum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="signature-baskets.html">
+                                Signature Baskets
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="desserts.html">
+                                Desserts
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+
+                <!-- Contact -->
+                <div class="footer-column footer-contact">
+
+                    <h3>Visit Us</h3>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <p>
+                            24 Bamboo Street,<br>
+                            Chinatown, Chennai
+                        </p>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <a href="mailto:hello@dimsumstreet.com">
+                            hello@dimsumstreet.com
+                        </a>
+
+                    </div>
+
+                    <div class="footer-contact-item">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <p>
+                            Mon – Sun: 10:30 AM – 10:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <div class="footer-bottom-container">
+
+                <p>
+                    © 2026 Dim Sum Street. All Rights Reserved.
+                </p>
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">Privacy Policy</a>
+
+                    <span>|</span>
+
+                    <a href="#">Terms & Conditions</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
