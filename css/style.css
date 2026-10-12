@@ -30371,3 +30371,382 @@ html[dir="rtl"] .basket-craft-badge {
         width: 90% !important;
     }
 }
+
+/* Center the Most Popular Badge in All Views */
+
+.brunch-package-featured {
+    position: relative;
+}
+
+.brunch-package-popular {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    width: max-content;
+    max-width: 90%;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .brunch-package-popular {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .brunch-package-popular {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
+}
+
+/* Align date calendar icon to the right edge */
+.reserve-input-icon {
+    position: relative;
+    width: 100%;
+}
+
+.reserve-input-icon input[type="date"] {
+    width: 100%;
+    position: relative;
+    padding-right: 48px;
+    text-align: left;
+}
+
+/* Chrome, Edge and other WebKit browsers */
+.reserve-input-icon input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 18px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* RTL mode: keep the icon at the right edge too */
+html[dir="rtl"] .reserve-input-icon input[type="date"] {
+    direction: ltr;
+    text-align: left;
+    padding-right: 48px;
+    padding-left: 20px;
+}
+
+html[dir="rtl"] .reserve-input-icon input[type="date"]::-webkit-calendar-picker-indicator {
+    right: 18px;
+    left: auto;
+}
+
+/* Responsive alignment */
+@media (max-width: 767px) {
+    .reserve-input-icon input[type="date"]::-webkit-calendar-picker-indicator {
+        right: 16px;
+    }
+}
+
+/* ==========================================
+   STRONG RTL FIX - CRAFT STORY SIGNATURE
+========================================== */
+
+html[dir="rtl"] .craft-story-content .craft-story-signature {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    width: fit-content !important;
+    max-width: 100% !important;
+
+    /* Move the entire signature to the RIGHT */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-inline-start: auto !important;
+    margin-inline-end: 0 !important;
+
+    direction: ltr !important;
+    text-align: right !important;
+    gap: 15px !important;
+}
+
+html[dir="rtl"] .craft-story-content .craft-story-signature>div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+
+    width: auto !important;
+    min-width: max-content !important;
+    flex: 0 0 auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .craft-story-content .craft-story-signature strong,
+html[dir="rtl"] .craft-story-content .craft-story-signature small {
+    display: block !important;
+    width: 100% !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .craft-story-content .craft-story-signature .craft-story-line {
+    display: block !important;
+    width: 48px !important;
+    min-width: 48px !important;
+    height: 1px !important;
+    flex: 0 0 48px !important;
+    margin: 0 !important;
+}
+
+/* Keep the whole signature at the right edge */
+html[dir="rtl"] .craft-story-content {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .craft-story-content .craft-story-signature {
+    position: relative !important;
+    left: auto !important;
+    right: 0 !important;
+    transform: none !important;
+}
+
+/* ==========================================
+   DIM SUM STREET - FOOTER RTL FINAL FIX
+========================================== */
+
+html[dir="rtl"] .site-footer {
+    direction: rtl !important;
+}
+
+html[dir="rtl"] .footer-container {
+    direction: rtl !important;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr !important;
+}
+
+/* Footer column headings and content */
+html[dir="rtl"] .footer-column,
+html[dir="rtl"] .footer-brand {
+    direction: rtl !important;
+    text-align: right !important;
+    min-width: 0;
+}
+
+html[dir="rtl"] .footer-column h3,
+html[dir="rtl"] .footer-column ul,
+html[dir="rtl"] .footer-column ul li,
+html[dir="rtl"] .footer-column ul li a,
+html[dir="rtl"] .footer-description {
+    text-align: right !important;
+}
+
+html[dir="rtl"] .footer-column ul li a:hover {
+    padding-left: 0 !important;
+    padding-right: 5px !important;
+}
+
+/* Contact icons on the RIGHT, contact text beside them */
+html[dir="rtl"] .footer-contact-item {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .footer-contact-item i {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+html[dir="rtl"] .footer-contact-item p,
+html[dir="rtl"] .footer-contact-item a {
+    direction: rtl !important;
+    text-align: right !important;
+    overflow-wrap: anywhere;
+}
+
+/* Brand logo and social icons */
+html[dir="rtl"] .footer-logo {
+    display: flex !important;
+    justify-content: flex-start !important;
+}
+
+html[dir="rtl"] .footer-socials {
+    direction: rtl !important;
+    justify-content: flex-start !important;
+}
+
+/* Copyright and policy links */
+html[dir="rtl"] .footer-bottom-container {
+    direction: rtl !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .footer-bottom-container p {
+    direction: rtl !important;
+    text-align: right !important;
+}
+
+html[dir="rtl"] .footer-bottom-links {
+    direction: rtl !important;
+    justify-content: flex-start !important;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    html[dir="rtl"] .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 35px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    html[dir="rtl"] .footer-container {
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 28px !important;
+    }
+
+    html[dir="rtl"] .footer-bottom-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 12px !important;
+    }
+
+    html[dir="rtl"] .footer-bottom-links {
+        flex-wrap: wrap !important;
+    }
+}
+
+/* =========================================
+   IPAD PRO - CENTER LAST REVIEW CARD
+========================================= */
+
+@media (min-width: 821px) and (max-width: 1024px) {
+
+    .street-guestbook-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .street-review-card:last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: calc(50% - 10px);
+        max-width: 100%;
+    }
+}
+
+/* =========================================
+   HOME 2 - TEA HOUSE IPAD PRO FIX
+========================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .tea-house-section {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .tea-house-container {
+        width: 90%;
+        max-width: 100%;
+        grid-template-columns: 45px minmax(0, 1fr) 100px;
+        gap: 22px;
+        padding: 0;
+    }
+
+    .tea-house-main {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .tea-house-heading {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tea-house-heading h2 {
+        font-size: clamp(32px, 4vw, 42px);
+        overflow-wrap: break-word;
+    }
+
+    .tea-house-collection {
+        width: 100%;
+        min-width: 0;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 15px;
+    }
+
+    .tea-house-feature,
+    .tea-house-list {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .tea-house-decoration {
+        width: 100%;
+        max-width: 100px;
+        min-width: 0;
+    }
+}
+
+/* RTL layout support */
+@media (min-width: 768px) and (max-width: 1024px) {
+    html[dir="rtl"] .tea-house-container {
+        grid-template-columns: 100px minmax(0, 1fr) 45px;
+    }
+
+    html[dir="rtl"] .tea-house-decoration {
+        grid-column: 1;
+    }
+
+    html[dir="rtl"] .tea-house-side-mark {
+        grid-column: 3;
+    }
+}
+
+/* iPad Pro - Keep Tea House Visual Inside */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .tea-house-section {
+        position: relative;
+        overflow: hidden !important;
+    }
+
+    .tea-house-container {
+        width: 92% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    .tea-house-decoration {
+        position: relative !important;
+        right: auto !important;
+        left: auto !important;
+        transform: scale(0.75);
+        transform-origin: center center;
+        max-width: 100%;
+    }
+
+    .tea-house-decoration img,
+    .tea-house-decoration svg {
+        max-width: 100%;
+        height: auto;
+    }
+}
