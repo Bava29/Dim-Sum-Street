@@ -30750,3 +30750,314 @@ html[dir="rtl"] .footer-bottom-links {
         height: auto;
     }
 }
+
+/* Tea House - Replace Decorative Icon With Image */
+.tea-house-decoration {
+    position: relative;
+    width: 220px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 110px 110px 12px 12px;
+}
+
+.tea-house-feature-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+}
+
+/* iPad Pro */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .tea-house-container {
+        grid-template-columns: 60px minmax(0, 1fr) 150px;
+        gap: 24px;
+    }
+
+    .tea-house-decoration {
+        width: 150px;
+        height: 260px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .tea-house-decoration {
+        width: min(100%, 280px);
+        height: 280px;
+        margin: 25px auto 0;
+    }
+}
+
+
+/* =========================================
+   TEA HOUSE — iPAD MINI RESPONSIVE FIX
+   ========================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .tea-house-section {
+        padding: 65px 0 !important;
+        overflow: hidden !important;
+    }
+
+    .tea-house-container {
+        width: 90% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        min-height: auto !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 30px !important;
+        margin-inline: auto !important;
+        box-sizing: border-box !important;
+    }
+
+    .tea-house-side-mark {
+        display: none !important;
+    }
+
+    .tea-house-main {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        grid-column: 1 !important;
+    }
+
+    .tea-house-heading {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .tea-house-heading h2 {
+        font-size: clamp(30px, 4vw, 40px) !important;
+        line-height: 1.3 !important;
+        overflow-wrap: normal !important;
+        word-break: normal !important;
+    }
+
+    .tea-house-heading p {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .tea-house-collection {
+        width: 100% !important;
+        min-width: 0 !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 22px !important;
+        margin-top: 25px !important;
+    }
+
+    .tea-house-feature {
+        width: 100% !important;
+        min-width: 0 !important;
+        min-height: 250px !important;
+        box-sizing: border-box !important;
+        padding: 28px !important;
+    }
+
+    .tea-house-feature-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .tea-house-feature-content h3 {
+        font-size: 27px !important;
+        line-height: 1.35 !important;
+        overflow-wrap: normal !important;
+        word-break: normal !important;
+    }
+
+    .tea-house-feature-content p {
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .tea-house-feature-icon {
+        right: 24px !important;
+        left: auto !important;
+    }
+
+    .tea-house-list {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .tea-house-item {
+        width: 100% !important;
+        min-width: 0 !important;
+        grid-template-columns: 35px minmax(0, 1fr) 30px !important;
+        gap: 12px !important;
+        padding: 18px 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .tea-house-item>div {
+        min-width: 0 !important;
+    }
+
+    .tea-house-item h4 {
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+        overflow-wrap: normal !important;
+        word-break: normal !important;
+    }
+
+    .tea-house-item p {
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .tea-house-link {
+        margin-top: 25px !important;
+    }
+
+    /* Tea image below the content */
+    .tea-house-decoration {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+        justify-self: center !important;
+        width: min(100%, 300px) !important;
+        height: 300px !important;
+        min-width: 0 !important;
+        margin: 0 auto !important;
+        overflow: hidden !important;
+    }
+
+    .tea-house-feature-image {
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        border-radius: inherit !important;
+    }
+}
+
+/* RTL compatibility on iPad Mini */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    html[dir="rtl"] .tea-house-container {
+        direction: rtl !important;
+    }
+
+    html[dir="rtl"] .tea-house-main,
+    html[dir="rtl"] .tea-house-heading,
+    html[dir="rtl"] .tea-house-heading>p,
+    html[dir="rtl"] .tea-house-feature,
+    html[dir="rtl"] .tea-house-feature-content {
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .tea-house-feature-icon {
+        right: auto !important;
+        left: 24px !important;
+    }
+
+    html[dir="rtl"] .tea-house-decoration {
+        grid-column: 1 !important;
+        justify-self: center !important;
+    }
+}
+
+
+/* DIM SUM COLLECTION — REDUCE CARD SPACING */
+
+.dim-collection-section {
+    padding-top: 65px !important;
+    padding-bottom: 65px !important;
+}
+
+.dim-collection-heading {
+    margin-bottom: 30px !important;
+}
+
+.dim-collection-grid {
+    gap: 18px !important;
+}
+
+.dim-collection-image {
+    height: 190px !important;
+}
+
+.dim-collection-content {
+    padding: 17px 15px 16px !important;
+}
+
+.dim-collection-category {
+    margin-bottom: 7px !important;
+}
+
+.dim-collection-content h3 {
+    margin-bottom: 8px !important;
+    line-height: 1.35 !important;
+}
+
+.dim-collection-content>p {
+    min-height: 0 !important;
+    margin-bottom: 12px !important;
+    line-height: 1.7 !important;
+}
+
+.dim-collection-link {
+    padding-top: 10px !important;
+}
+
+.dim-collection-bottom {
+    margin-top: 25px !important;
+}
+
+/* TABLET / iPAD MINI */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .dim-collection-section {
+        padding: 55px 3% !important;
+    }
+
+    .dim-collection-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 20px !important;
+    }
+
+    .dim-collection-image {
+        height: 200px !important;
+    }
+
+    .dim-collection-content {
+        padding: 18px !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+    .dim-collection-section {
+        padding: 45px 5% !important;
+    }
+
+    .dim-collection-heading {
+        margin-bottom: 25px !important;
+    }
+
+    .dim-collection-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    .dim-collection-image {
+        height: 220px !important;
+    }
+
+    .dim-collection-content {
+        padding: 18px !important;
+    }
+}
