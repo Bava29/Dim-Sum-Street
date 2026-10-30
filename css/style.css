@@ -21,6 +21,11 @@
     --radius: 8px;
 }
 
+/* Keep the brand primary fixed across themes; dark mode only changes surfaces and text. */
+html.dark-mode {
+    --primary-color: #8B1E1E;
+}
+
 
 /* =========================================
    RESET
@@ -1821,7 +1826,7 @@ html.dark-mode .dimsum-hero {
 }
 
 html.dark-mode .dimsum-hero-content h1 {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 html.dark-mode .dimsum-hero-label {
@@ -31060,4 +31065,28 @@ html[dir="rtl"] .footer-bottom-links {
     .dim-collection-content {
         padding: 18px !important;
     }
+}
+
+/* =========================================
+   ABOUT - PHILOSOPHY DARK MODE
+   TEXT CONTRAST FIX
+========================================= */
+
+html.dark-mode .about-philosophy-word {
+    color: rgba(231, 184, 75, 0.48);
+}
+
+/* Supporting Paragraph */
+html.dark-mode .about-philosophy-content p {
+    color: #D5CCC5;
+}
+
+/* Philosophy Heading */
+html.dark-mode .about-philosophy-content h3 {
+    color: #FFFFFF;
+}
+
+/* Hover Contrast */
+html.dark-mode .about-philosophy-item:hover .about-philosophy-word {
+    color: rgba(231, 184, 75, 0.65);
 }
