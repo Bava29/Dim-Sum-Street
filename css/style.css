@@ -2556,9 +2556,9 @@ html.dark-mode .signature-dimsum-badge {
 }
 
 html.dark-mode .signature-dimsum-button {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    border-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-color: var(--primary-color);
 }
 
 /* =========================
@@ -7958,7 +7958,7 @@ html[dir="rtl"] .about-story-main {
 .about-philosophy-word {
     justify-self: end;
 
-    color: rgba(139, 30, 30, 0.14);
+    color: rgba(139, 30, 30, 0.38);
     font-family: var(--heading-font);
     font-size: 25px;
     font-weight: 600;
@@ -9606,9 +9606,9 @@ html.dark-mode .dim-collection-bottom>p i {
 }
 
 html.dark-mode .dim-collection-button {
-    color: var(--dark-bg);
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color: var(--white-color);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 html.dark-mode .dim-collection-button:hover {
@@ -9908,9 +9908,9 @@ html.dark-mode .dim-signature-dish>i {
 }
 
 html.dark-mode .dim-signature-menu-link {
-    color: var(--dark-bg);
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color: var(--white-color);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 html.dark-mode .dim-signature-menu-link:hover {
@@ -10220,9 +10220,9 @@ html.dark-mode .dim-craft-bottom {
 }
 
 html.dark-mode .dim-craft-button {
-    color: var(--dark-bg);
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color: var(--white-color);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 html.dark-mode .dim-craft-button:hover {
@@ -10958,9 +10958,9 @@ html.dark-mode .signature-baskets-bottom {
 }
 
 html.dark-mode .signature-baskets-button {
-    color: #292421;
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color: var(--white-color);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 html.dark-mode .signature-baskets-button:hover {
@@ -12412,9 +12412,9 @@ html.dark-mode .dessert-collection-bottom {
 }
 
 html.dark-mode .dessert-collection-button {
-    color: #292421;
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color: var(--white-color);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 html.dark-mode .dessert-collection-button:hover {
@@ -12789,9 +12789,9 @@ html.dark-mode .dessert-combo-popular {
 }
 
 html.dark-mode .dessert-combo-button {
-    color: #292421;
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color: var(--white-color);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 html.dark-mode .dessert-combo-button:hover {
@@ -13347,6 +13347,14 @@ html.dark-mode .dessert-story-content p {
 html.dark-mode .dessert-story-content>span,
 html.dark-mode .dessert-story-content a {
     color: var(--secondary-color);
+}
+
+html.dark-mode .dessert-story-content a[href="booking.html"] {
+    color: var(--white-color);
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: var(--radius);
+    padding: 14px 20px;
 }
 
 html.dark-mode .dessert-story-row {
@@ -14765,9 +14773,9 @@ html.dark-mode .brunch-package-features li i {
 }
 
 html.dark-mode .brunch-package-btn {
-    color: var(--dark-bg);
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color: var(--white-color);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 html.dark-mode .brunch-package-btn:hover {
@@ -19640,7 +19648,7 @@ html[dir="rtl"] body .reserve-input-icon input[type="date"] {
     direction: rtl !important;
     text-align: right !important;
     padding-right: 14px !important;
-    padding-left: 43px !important;
+    padding-left: 48px !important;
 }
 
 /* Custom calendar icon on the left */
@@ -19657,6 +19665,8 @@ html[dir="rtl"] body .reserve-input-icon i {
 html[dir="rtl"] body .reserve-input-icon input[type="date"]::-webkit-calendar-picker-indicator {
     opacity: 1 !important;
     display: block !important;
+    right: auto !important;
+    left: 18px !important;
     cursor: pointer;
 }
 
