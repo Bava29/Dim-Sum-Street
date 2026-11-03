@@ -31100,3 +31100,36 @@ html.dark-mode .about-philosophy-content h3 {
 html.dark-mode .about-philosophy-item:hover .about-philosophy-word {
     color: rgba(231, 184, 75, 0.65);
 }
+
+
+/* Reservation Dropdown Arrow Spacing */
+.reserve-field select {
+    appearance: none;
+    -webkit-appearance: none;
+
+    padding-right: 42px !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23292421' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+    background-repeat: no-repeat;
+    background-position: right 10px center !important;
+    background-size: 16px;
+}
+
+/* Dark Mode */
+html.dark-mode .reserve-field select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+}
+
+/* RTL Mode */
+html[dir="rtl"] .reserve-field select {
+    padding-right: 14px !important;
+    padding-left: 42px !important;
+
+    background-position: left 10px center !important;
+}
+
+/* RTL + Dark Mode */
+html[dir="rtl"].dark-mode .reserve-field select {
+    background-position: left 10px center !important;
+}
